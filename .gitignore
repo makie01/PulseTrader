@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.pyo
+
+# OS / editor files
+.DS_Store
+
+# Virtualenvs / environments
+.venv/
+env/
+venv/
+
+# Local configuration / secrets
+.env
+keys/
+
+# Project-specific data and artifacts
+data/
+pred_market/.adk/
+
+
