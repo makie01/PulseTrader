@@ -1,29 +1,73 @@
-from kalshi_client import get_kalshi_client
-from pprint import pprint
-import json
+from .kalshi_client import get_kalshi_client
+from typing import Any, Dict, List, Optional
 
-client = get_kalshi_client()
 
-limit = 100 # int | Number of results per page. Defaults to 100. Maximum value is 1000. (optional) (default to 100)
+def market_to_dict(market: Any) -> Dict[str, Any]:
+    """
+    Convert a Kalshi Market model to a plain dict, handling different SDK versions.
+    """
+    if hasattr(market, "model_dump"):
+        print("using model_dump")
+        return market.model_dump()
+    if hasattr(market, "dict"):
+        print("using dict")
+        return market.dict()
+    if hasattr(market, "to_dict"):
+        print("using to_dict")
+        return market.to_dict()
+    # Fallback: best-effort conversion
+    print("using fallback")
+    return dict(market)
 
-cursor = None # 'cursor_example' # str | Pagination cursor. Use the cursor value returned from the previous response to get the next page of results. Leave empty for the first page. (optional)
 
-event_ticker = None # 'event_ticker_example' # str | Filter by event ticker (optional)
+def get_markets_for_event(
+    event_ticker: str,
+    limit: int = 1000,
+) -> List[Dict[str, Any]]:
+    """
+    Retrieve **all** open markets for a given event ticker, handling pagination.
 
-series_ticker = None # 'series_ticker_example' # str | Filter by series ticker (optional)
+    Args:
+        event_ticker: Full Kalshi event ticker (e.g. "KXELONMARS-99").
+        limit: Page size for API calls (max 1000 per Kalshi docs).
 
-max_close_ts = None #56 # int | Filter items that close before this Unix timestamp (optional)
+    Returns:
+        List of market dicts for the specified event.
+    """
+    client = get_kalshi_client()
 
-min_close_ts = None #56 # int | Filter items that close after this Unix timestamp (optional)
+    all_markets: List[Dict[str, Any]] = []
+    cursor: Optional[str] = None
 
-status = None#'initialized' # str | Filter by market status. Comma-separated list. Possible values are 'initialized', 'open', 'closed', 'settled', 'determined'. Note that the API accepts 'open' for filtering but returns 'active' in the response. Leave empty to return markets with any status. (optional)
+    while True:
+        resp = client.get_markets(
+            limit=limit,
+            cursor=cursor,
+            event_ticker=event_ticker,
+            status="open",
+        )
 
-tickers = None # str | Filter by specific market tickers. Comma-separated list of market tickers to retrieve. (optional)
+        markets = getattr(resp, "markets", []) or []
 
-try:
-    # Get Markets
-    api_response = client.get_markets(limit=limit, cursor=cursor, event_ticker=event_ticker, series_ticker=series_ticker, max_close_ts=max_close_ts, min_close_ts=min_close_ts, status=status, tickers=tickers)
-    print("The response of MarketsApi->get_markets:\n")
-    print(api_response.markets[0])
-except Exception as e:
-    print("Exception when calling MarketsApi->get_markets: %s\n" % e)
+        # Convert to dicts and *explicitly* keep only markets whose status is "open".
+        # This defends against any API/SDK mismatch where non-open statuses
+        # (e.g. "inactive") might slip through server-side filters.
+        for m in markets:
+            m_dict = market_to_dict(m)
+            if m_dict.get("status") in ["open", "active"]:
+                all_markets.append(m_dict)
+
+        cursor = getattr(resp, "cursor", None)
+        if not cursor:
+            break
+
+    return all_markets
+
+
+if __name__ == "__main__":
+    # Simple manual test: fetch and print markets for a sample event ticker.
+    sample_event_ticker = "KXRECOGROC-29"
+    markets = get_markets_for_event(sample_event_ticker)
+    print(f"Found {len(markets)} markets for event {sample_event_ticker}")
+    for m in markets:
+        print(m)

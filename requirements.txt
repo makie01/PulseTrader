@@ -1,3 +1,4 @@
 google-adk
 kalshi_python_sync
 dotenv
+google-genai
