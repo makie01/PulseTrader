@@ -12,6 +12,8 @@ venv/
 
 # Local configuration / secrets
 .env
+pred_market/.env
+pred_market/sub_agents/research_agent/.env
 keys/
 
 # Project-specific data and artifacts
