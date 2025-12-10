@@ -1,10 +1,19 @@
-from .kalshi_client import get_kalshi_client
 import json
 import math
 import os
+import sys
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
-from .emb import embed_texts, embed_text
+# Handle both package import and direct execution
+try:
+    from .kalshi_client import get_kalshi_client
+    from .emb import embed_texts, embed_text
+except ImportError:
+    # When running directly, add parent directory to path
+    sys.path.insert(0, str(Path(__file__).parent.parent))
+    from tools.kalshi_client import get_kalshi_client
+    from tools.emb import embed_texts, embed_text
 
 
 def event_to_dict(event: Any) -> Dict[str, Any]:

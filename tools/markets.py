@@ -1,5 +1,14 @@
-from .kalshi_client import get_kalshi_client
+import sys
+from pathlib import Path
 from typing import Any, Dict, List, Optional
+
+# Handle both package import and direct execution
+try:
+    from .kalshi_client import get_kalshi_client
+except ImportError:
+    # When running directly, add parent directory to path
+    sys.path.insert(0, str(Path(__file__).parent.parent))
+    from tools.kalshi_client import get_kalshi_client
 
 
 def market_to_dict(market: Any) -> Dict[str, Any]:

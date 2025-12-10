@@ -1,39 +1,33 @@
 from google.adk.agents import Agent
 from google.adk.tools import FunctionTool
 from .prompt import EXECUTION_AGENT_PROMPT
+from tools.trade import execute_kalshi_trade as _execute_kalshi_trade
 
 
 def execute_kalshi_trade(
     ticker: str,
     side: str,
     quantity: int,
-    order_type: str,
     price: int = None
 ) -> dict:
     """
-    Placeholder function to execute a trade on Kalshi.
+    Execute a trade on Kalshi prediction markets. Trades are always market orders.
     
     Args:
         ticker: Market ticker to trade (e.g., "RAIN_SF")
-        side: "YES" or "NO"
+        side: "yes" or "no"
         quantity: Number of contracts to trade
-        order_type: "market" or "limit"
-        price: Price in cents (required for limit orders, ignored for market orders)
-        
+        price: Price in cents, maximum you're okay paying
     Returns:
-        dict: Placeholder response with order confirmation
+        dict: Response with order confirmation from Kalshi API
     """
-    # Placeholder implementation - returns empty structure
-    return {
-        "order_id": None,
-        "ticker": ticker,
-        "side": side,
-        "quantity": quantity,
-        "order_type": order_type,
-        "price": price,
-        "status": "pending",
-        "message": "Placeholder: Trade execution not yet implemented"
-    }
+    # Use the actual implementation from tools.trade
+    # Note: The current implementation uses market orders and requires price
+    if price is None:
+        raise ValueError("Price is required for trade execution")
+    
+    resp = _execute_kalshi_trade(ticker=ticker, side=side, quantity=quantity, price=price)
+    return resp
 
 
 execute_kalshi_trade_tool = FunctionTool(execute_kalshi_trade)
