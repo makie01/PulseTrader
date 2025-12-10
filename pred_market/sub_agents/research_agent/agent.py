@@ -1,14 +1,15 @@
 import os
+import dotenv
 
 from google.adk.agents import LlmAgent
 from google.adk.tools.mcp_tool import McpToolset
 from google.adk.tools.mcp_tool.mcp_session_manager import StdioConnectionParams
 from mcp import StdioServerParameters
 
-# Optional: read key from env (recommended)
-PERPLEXITY_API_KEY = os.getenv("PERPLEXITY_API_KEY")
-if not PERPLEXITY_API_KEY:
-    raise RuntimeError("PERPLEXITY_API_KEY is not set in the environment")
+dotenv.load_dotenv()
+PERPLEXITY_API_KEY_ID = os.getenv("PERPLEXITY_API_KEY_ID")
+if not PERPLEXITY_API_KEY_ID:
+    raise RuntimeError("PERPLEXITY_API_KEY_ID is not set in the environment")
 
 perplexity_news_research_agent = LlmAgent(
     model="gemini-2.0-flash",
@@ -28,7 +29,7 @@ perplexity_news_research_agent = LlmAgent(
                         "@perplexity-ai/mcp-server",
                     ],
                     env={
-                        "PERPLEXITY_API_KEY": PERPLEXITY_API_KEY,
+                        "PERPLEXITY_API_KEY_ID": PERPLEXITY_API_KEY_ID,
                         "PERPLEXITY_TIMEOUT_MS": "60000000",
                     },
                 ),
