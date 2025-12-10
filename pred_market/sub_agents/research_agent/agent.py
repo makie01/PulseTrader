@@ -32,6 +32,8 @@ def query_sonar_pro(message: str) -> str:
     Returns:
         The response content from Sonar Pro
     """
+    print("Querying Sonar Pro with message: ", message)
+    
     client = get_perplexity_client()
     completion = client.chat.completions.create(
         model="sonar-pro",
@@ -44,8 +46,6 @@ def query_sonar_pro(message: str) -> str:
 # Create the tool for the agent
 sonar_pro_tool = FunctionTool(
     func=query_sonar_pro,
-    name="query_sonar_pro",
-    description="Query Perplexity Sonar Pro model for comprehensive research and analysis. Use this tool to get in-depth research, analysis, and context on prediction markets and related topics."
 )
 
 # mcp_true = False
@@ -77,7 +77,4 @@ perplexity_news_research_agent = LlmAgent(
         sonar_pro_tool,
     ],
 )
-
-
-
 
