@@ -18,4 +18,5 @@ keys/
 data/
 pred_market/.adk/
 
+tools/test_notebook.ipynb
 
