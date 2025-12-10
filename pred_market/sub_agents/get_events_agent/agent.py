@@ -1,6 +1,9 @@
 from google.adk.agents import Agent
 from google.adk.tools import FunctionTool
+
 from .prompt import EVENT_FINDER_AGENT_PROMPT
+
+# Tools built for Events Agent
 from tools.events import search_open_events
 from tools.markets import get_markets_for_event as _get_markets_for_event
 
