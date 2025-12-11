@@ -15,18 +15,34 @@ except ImportError:
 def execute_kalshi_trade(ticker, side, quantity, price):
     client = get_kalshi_client()
     orders = orders_api.OrdersApi(client)
-    resp = orders.create_order(
-        ticker=ticker,
-        side=side.lower(),
-        action="buy", 
-        count=quantity,
-        type="market",
-        yes_price=price,
-        time_in_force="immediate_or_cancel",
-    )
-    print(resp)
-    return resp
+    side = side.lower()
+    if side == "yes":
+        resp = orders.create_order(
+            ticker=ticker,
+            side=side.lower(),
+            action="buy", 
+            count=quantity,
+            type="market",
+            yes_price=price,
+            time_in_force="immediate_or_cancel",
+        )
+        print(resp)
+        return resp
+    elif side == "no":
+        resp = orders.create_order(
+            ticker=ticker,
+            side=side.lower(),
+            action="buy", 
+            count=quantity,
+            type="market",
+            no_price=price,
+            time_in_force="immediate_or_cancel",
+        )
+        print(resp)
+        return resp
+    else:
+        raise ValueError(f"Invalid side: {side}")
 
 if __name__ == "__main__":
-    execute_kalshi_trade("KXRECOGROC-29", "yes", 1, 10)
+    execute_kalshi_trade("KXRECOGROC-29", "yes", 1, 20)
     

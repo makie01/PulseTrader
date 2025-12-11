@@ -3,3 +3,7 @@ kalshi_python_sync
 dotenv
 google-genai
 perplexity
+numpy
+tqdm
+requests
+pandas

@@ -15,18 +15,8 @@ def market_to_dict(market: Any) -> Dict[str, Any]:
     """
     Convert a Kalshi Market model to a plain dict, handling different SDK versions.
     """
-    if hasattr(market, "model_dump"):
-        print("using model_dump")
-        return market.model_dump()
-    if hasattr(market, "dict"):
-        print("using dict")
-        return market.dict()
-    if hasattr(market, "to_dict"):
-        print("using to_dict")
-        return market.to_dict()
-    # Fallback: best-effort conversion
-    print("using fallback")
-    return dict(market)
+
+    return market.model_dump()
 
 
 def get_markets_for_event(
@@ -77,6 +67,4 @@ if __name__ == "__main__":
     # Simple manual test: fetch and print markets for a sample event ticker.
     sample_event_ticker = "KXRECOGROC-29"
     markets = get_markets_for_event(sample_event_ticker)
-    print(f"Found {len(markets)} markets for event {sample_event_ticker}")
-    for m in markets:
-        print(m)
+    print(markets)
