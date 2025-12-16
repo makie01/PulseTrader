@@ -251,10 +251,12 @@ PERPLEXITY_API_KEY_ID=your-perplexity-api-key
 
 The easiest way to interact with the chatbot is through Google ADK's web interface.
 
-#### Step 1: Navigate to the Agent Directory
+#### Step 1: Navigate to the Project Root
+
+Make sure you're in the project root directory (where `pred_market/` folder is located):
 
 ```bash
-cd pred_market
+cd PulseTrader  # or wherever you cloned the repository
 ```
 
 #### Step 2: Run ADK Web
@@ -267,6 +269,8 @@ This will:
 - Start a local web server
 - Open your browser to the ADK web interface (typically at `http://localhost:8080`)
 - Allow you to interact with the `pred_market_agent` through a chat interface
+
+**Note**: Run `adk web` from the project root, not from inside the `pred_market/` directory.
 
 #### Step 3: Interact with the Agent
 
@@ -307,8 +311,8 @@ If `adk web` doesn't work:
 
 2. **Verify you're in the correct directory**:
    ```bash
-   pwd  # Should show .../PulseTrader/pred_market
-   ls   # Should show agent.py, prompt.py, etc.
+   pwd  # Should show .../PulseTrader (project root, not pred_market/)
+   ls   # Should show pred_market/, tools/, requirements.txt, etc.
    ```
 
 3. **Check for import errors**:
@@ -430,7 +434,7 @@ If `adk web` doesn't work:
 **Error**: Agent doesn't appear in ADK web interface
 
 **Solution**:
-- Ensure you're running `adk web` from the `pred_market/` directory
+- Ensure you're running `adk web` from the project root directory (not from inside `pred_market/`)
 - Check that `agent.py` exists and defines `root_agent`
 - Verify the agent name matches what ADK expects
 
