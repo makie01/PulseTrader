@@ -253,7 +253,7 @@ The easiest way to interact with the chatbot is through Google ADK's web interfa
 
 #### Step 1: Navigate to the Project Root
 
-Make sure you're in the project root directory (where `pred_market/` folder is located):
+Make sure you're in the project root directory (where `pred_market_agent/` folder is located):
 
 ```bash
 cd PulseTrader  # or wherever you cloned the repository
@@ -270,7 +270,7 @@ This will:
 - Open your browser to the ADK web interface (typically at `http://localhost:8080`)
 - Allow you to interact with the `pred_market_agent` through a chat interface
 
-**Note**: Run `adk web` from the project root, not from inside the `pred_market/` directory.
+**Note**: Run `adk web` from the project root, not from inside the `pred_market_agent/` directory.
 
 #### Step 3: Interact with the Agent
 
@@ -311,13 +311,13 @@ If `adk web` doesn't work:
 
 2. **Verify you're in the correct directory**:
    ```bash
-   pwd  # Should show .../PulseTrader (project root, not pred_market/)
-   ls   # Should show pred_market/, tools/, requirements.txt, etc.
+   pwd  # Should show .../PulseTrader (project root, not pred_market_agent/)
+   ls   # Should show pred_market_agent/, tools/, requirements.txt, etc.
    ```
 
 3. **Check for import errors**:
    ```bash
-   python -c "from pred_market.agent import root_agent; print('Import successful')"
+   python -c "from pred_market_agent.agent import root_agent; print('Import successful')"
    ```
 
 4. **Verify environment variables are loaded**:
@@ -376,11 +376,11 @@ If `adk web` doesn't work:
 
 #### 1. Import Errors
 
-**Error**: `ModuleNotFoundError: No module named 'pred_market'`
+**Error**: `ModuleNotFoundError: No module named 'pred_market_agent'`
 
-**Solution**: 
+**Solution**:
 - Make sure you're running from the project root or have the project in your Python path
-- Check that `pred_market/` directory exists and contains `agent.py`
+- Check that `pred_market_agent/` directory exists and contains `agent.py`
 
 #### 2. API Key Errors
 
@@ -444,7 +444,7 @@ If `adk web` doesn't work:
 
 ```
 PulseTrader/
-├── pred_market/              # Main agent directory
+├── pred_market_agent/        # Main agent directory
 │   ├── agent.py              # Root agent definition
 │   ├── prompt.py             # Root agent prompt
 │   ├── init.py               # Package initialization
