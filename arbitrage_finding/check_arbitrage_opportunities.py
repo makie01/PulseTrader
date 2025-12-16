@@ -19,7 +19,7 @@ from typing import List, Dict, Any, Optional
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from tools.markets import get_markets_for_event as get_kalshi_markets
+from tools.kalshi_markets import get_markets_for_event as get_kalshi_markets
 from tools.polymarket import get_markets_for_event as get_polymarket_markets
 
 # Trading fee rate for Kalshi (7% = 0.07)

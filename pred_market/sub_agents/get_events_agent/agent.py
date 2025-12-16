@@ -7,8 +7,8 @@ from google.adk.tools import FunctionTool
 from .prompt import EVENT_FINDER_AGENT_PROMPT
 
 # Tools built for Events Agent
-from tools.events import search_open_events
-from tools.markets import get_markets_for_event as _get_markets_for_event
+from tools.kalshi_events import search_open_events
+from tools.kalshi_markets import get_markets_for_event as _get_markets_for_event
 
 
 def find_kalshi_events(topic: str, limit: int = 5) -> dict:
@@ -138,6 +138,7 @@ def get_event_markets(event_ticker: str) -> dict:
 find_kalshi_events_tool = FunctionTool(find_kalshi_events)
 get_event_markets_tool = FunctionTool(get_event_markets)
 
+
 event_finder_agent = Agent(
     name='event_finder_agent',
     model='gemini-2.5-pro',
@@ -145,4 +146,3 @@ event_finder_agent = Agent(
     instruction=EVENT_FINDER_AGENT_PROMPT,
     tools=[find_kalshi_events_tool, get_event_markets_tool],
 )
-

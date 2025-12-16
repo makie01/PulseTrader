@@ -1,29 +1,40 @@
 import csv
 import json
-import os
 import math
+import os
 import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+
 import numpy as np
 from tqdm import tqdm
 
 # Handle both package import and direct execution
 try:
-    from .kalshi_client import get_kalshi_client
-    from .emb import embed_texts, embed_text
-    from .markets import get_markets_for_event as get_kalshi_markets
-    from .events import _load_events_and_embeddings as load_kalshi_events_and_embeddings
-    from .polymarket import _load_events_and_embeddings as load_polymarket_events_and_embeddings
-    from .polymarket import get_markets_for_event as get_polymarket_markets
-except ImportError:
-    # When running directly, add parent directory to path
-    sys.path.insert(0, str(Path(__file__).parent.parent))
-    from tools.kalshi_client import get_kalshi_client
+    # When run with project root on PYTHONPATH (e.g. `python -m arbitrage_finding.arbitrage_poly_kalshi`)
     from tools.emb import embed_texts, embed_text
-    from tools.markets import get_markets_for_event as get_kalshi_markets
-    from tools.events import _load_events_and_embeddings as load_kalshi_events_and_embeddings
-    from tools.polymarket import _load_events_and_embeddings as load_polymarket_events_and_embeddings
+    from tools.kalshi_events import (
+        _load_events_and_embeddings as load_kalshi_events_and_embeddings,
+    )
+    from tools.kalshi_client import get_kalshi_client
+    from tools.kalshi_markets import get_markets_for_event as get_kalshi_markets
+    from tools.polymarket import (
+        _load_events_and_embeddings as load_polymarket_events_and_embeddings,
+    )
+    from tools.polymarket import get_markets_for_event as get_polymarket_markets
+except ImportError:
+    # When run directly as a script, ensure the project root (parent of this file)
+    # is on sys.path so the `tools` package can be imported.
+    sys.path.insert(0, str(Path(__file__).parent.parent))
+    from tools.emb import embed_texts, embed_text
+    from tools.kalshi_events import (
+        _load_events_and_embeddings as load_kalshi_events_and_embeddings,
+    )
+    from tools.kalshi_client import get_kalshi_client
+    from tools.kalshi_markets import get_markets_for_event as get_kalshi_markets
+    from tools.polymarket import (
+        _load_events_and_embeddings as load_polymarket_events_and_embeddings,
+    )
     from tools.polymarket import get_markets_for_event as get_polymarket_markets
 
 
@@ -78,23 +89,6 @@ def _save_all_candidates_to_csv(
                     "polymarket_category": poly_event.get("category"),
                 }
             )
-
-
-def _cosine_similarity(a: List[float], b: List[float]) -> float:
-    """
-    Compute cosine similarity between two dense vectors.
-    """
-    if not a or not b or len(a) != len(b):
-        return 0.0
-    dot = sum(x * y for x, y in zip(a, b))
-    if dot == 0.0:
-        return 0.0
-    na = math.sqrt(sum(x * x for x in a))
-    nb = math.sqrt(sum(x * x for x in b))
-    if na == 0.0 or nb == 0.0:
-        return 0.0
-    return dot / (na * nb)
-
 
 def find_similar_cross_platform_events(
     top_k: int = 10,

@@ -1,26 +1,18 @@
+"""
+DEPRECATED: Use arbitrage_poly_kalshi.py instead.
+"""
 import json
 import math
 import os
 import re
-import sys
-from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
+
 import numpy as np
 from tqdm import tqdm
 
-# Handle both package import and direct execution
-try:
-    from .kalshi_client import get_kalshi_client
-    from .emb import embed_texts, embed_text
-    from .markets import get_markets_for_event
-    from .events import fetch_all_open_events, _load_events_and_embeddings
-except ImportError:
-    # When running directly, add parent directory to path
-    sys.path.insert(0, str(Path(__file__).parent.parent))
-    from tools.kalshi_client import get_kalshi_client
-    from tools.emb import embed_texts, embed_text
-    from tools.markets import get_markets_for_event
-    from tools.events import fetch_all_open_events, _load_events_and_embeddings
+from tools.emb import embed_texts, embed_text
+from tools.kalshi_events import _load_events_and_embeddings, fetch_all_open_events
+from tools.kalshi_markets import get_markets_for_event
 
 
 def _cosine_similarity(a: List[float], b: List[float]) -> float:

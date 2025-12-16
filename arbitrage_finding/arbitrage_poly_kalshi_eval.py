@@ -7,18 +7,27 @@ from typing import Any, Dict, List, Optional
 
 # Handle both package import and direct execution
 try:
+    # When imported as part of the arbitrage_finding package
     from .arbitrage_poly_kalshi import CROSS_PLATFORM_CANDIDATES_CSV
-    from .events import _load_events_and_embeddings as load_kalshi_events_and_embeddings
-    from .polymarket import _load_events_and_embeddings as load_polymarket_events_and_embeddings
-    from .markets import get_markets_for_event as get_kalshi_markets
-    from .polymarket import get_markets_for_event as get_polymarket_markets
+    from tools.kalshi_events import (
+        _load_events_and_embeddings as load_kalshi_events_and_embeddings,
+    )
+    from tools.kalshi_markets import get_markets_for_event as get_kalshi_markets
+    from tools.polymarket import (
+        _load_events_and_embeddings as load_polymarket_events_and_embeddings,
+    )
+    from tools.polymarket import get_markets_for_event as get_polymarket_markets
 except ImportError:
-    # When running directly, add parent directory to path
+    # When running directly, add parent directory to path and import via package name
     sys.path.insert(0, str(Path(__file__).parent.parent))
-    from tools.arbitrage_poly_kalshi import CROSS_PLATFORM_CANDIDATES_CSV
-    from tools.events import _load_events_and_embeddings as load_kalshi_events_and_embeddings
-    from tools.polymarket import _load_events_and_embeddings as load_polymarket_events_and_embeddings
-    from tools.markets import get_markets_for_event as get_kalshi_markets
+    from arbitrage_finding.arbitrage_poly_kalshi import CROSS_PLATFORM_CANDIDATES_CSV
+    from tools.kalshi_events import (
+        _load_events_and_embeddings as load_kalshi_events_and_embeddings,
+    )
+    from tools.kalshi_markets import get_markets_for_event as get_kalshi_markets
+    from tools.polymarket import (
+        _load_events_and_embeddings as load_polymarket_events_and_embeddings,
+    )
     from tools.polymarket import get_markets_for_event as get_polymarket_markets
 
 
