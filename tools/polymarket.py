@@ -474,7 +474,33 @@ if __name__ == "__main__":
         print(f"Category: {event.get('category', 'N/A')}")
         print("--------------------------------")
     """
-    id = "591900"
-    markets = get_markets_for_event(event_id=id)
-    print("markets: ")
-    print(json.dumps(markets, indent=2))
+    id = "16085"
+    print_full_json = True  # Set to True to print full markets JSON, False to only print event title
+    
+    # Fetch the event to get its title
+    url = f"https://gamma-api.polymarket.com/events/{id}"
+    headers = {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+    }
+    params = {'_t': int(time.time() * 1000)}
+    
+    try:
+        response = requests.get(url, headers=headers, params=params, timeout=30)
+        if response.status_code == 200:
+            event = response.json()
+            event_title = event.get('title', 'N/A')
+            
+            if print_full_json:
+                markets = get_markets_for_event(event_id=id)
+                print("markets: ")
+                print(json.dumps(markets, indent=2))
+            else:
+                print(f"Event Title: {event_title}")
+        else:
+            print(f"Error: Could not fetch event {id} (status code: {response.status_code})")
+    except Exception as e:
+        print(f"Error fetching event: {e}")
+    
+    
