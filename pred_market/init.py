@@ -1,4 +1,4 @@
-from .agent import pred_market_agent
+from .agent import root_agent
 
-__all__ = ['pred_market_agent']
+__all__ = ['root_agent']
 
