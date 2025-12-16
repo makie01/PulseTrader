@@ -65,6 +65,7 @@ def get_markets_for_event(
 
 if __name__ == "__main__":
     # Simple manual test: fetch and print markets for a sample event ticker.
-    sample_event_ticker = "KXRECOGROC-29"
+    sample_event_ticker = "KXGRETAGAZA-26JAN01"
     markets = get_markets_for_event(sample_event_ticker)
     print(markets)
+    

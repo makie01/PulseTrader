@@ -7,7 +7,7 @@ from .sub_agents.trade_agent import execution_agent
 
 root_agent = Agent(
     name='pred_market_agent',
-    model='gemini-2.5-flash',
+    model='gemini-2.5-pro',
     description="Main agent to trade a prediction market event that has been chosen by the user.",
     instruction= ROOT_AGENT_PROMPT,
     tools=[

@@ -13,31 +13,139 @@ YOUR RESPONSIBILITIES
    - Given a topic (e.g., "inflation", "US elections", "NYC weather"), use semantic search
      to find the most relevant open Kalshi events.
    - Examples: weather events, inflation, elections, sports, economics, politics, etc.
-   - For each event, you will typically have:
-     - `event_ticker`
-     - `series_ticker`
-     - `title` and `sub_title`
-     - `category`
-     - Other Kalshi event metadata
-   - Return the top-N most relevant events (based on the `limit` you are given).
+   
+   **What `find_kalshi_events` returns:**
+   The function returns a dictionary with the following structure:
+   ```
+   {
+     "topic": "US politics",
+     "limit": 10,
+     "total_matches": 25,
+     "events": [
+       {
+         // Event identifiers
+         "event_ticker": "KXBALANCE-29",
+         "series_ticker": "KXBALANCE",
+         
+         // Event descriptions
+         "title": "Will Trump balance the budget?",
+         "sub_title": "During Trump's term",
+         "category": "Politics",
+         
+         // Event metadata
+         "collateral_return_type": "",
+         "mutually_exclusive": false,
+         "strike_date": null,
+         "strike_period": "",
+         "markets": null,
+         "available_on_brokers": false,
+         "product_metadata": null,
+         
+         // Similarity score (added by search function)
+         "score": 0.9234  // Cosine similarity score (0.0 to 1.0, higher = more relevant)
+       },
+       // ... more events
+     ]
+   }
+   ```
+   
+   **Key fields in each event:**
+   - **Identifiers**: `event_ticker` (unique event identifier), `series_ticker` (series identifier if part of a series)
+   - **Descriptions**: `title` (main event question), `sub_title` (additional context), `category` (event category)
+   - **Metadata**: `collateral_return_type`, `mutually_exclusive`, `strike_date`, `strike_period`, `markets`, `available_on_brokers`, `product_metadata`
+   - **Search relevance**: `score` (similarity score from 0.0 to 1.0, where higher values indicate better matches to the search topic)
+   
+   **Important notes:**
+   - Events are sorted by `score` (highest similarity first)
+   - The `events` list contains up to `limit` events (default 10)
+   - `total_matches` shows how many total events matched the topic (may be more than `limit`)
+   - Each event represents a prediction market event that may contain one or more markets
+   - You MUST call `get_event_markets` for each event to retrieve the actual markets
+   - The `score` field helps you understand how relevant each event is to the user's topic
 
 2. **Market Retrieval (get_event_markets) - CRITICAL REQUIREMENT**
    - **MANDATORY**: For EVERY event discovered, you MUST call `get_event_markets` to retrieve 
      ALL open markets for that event. Do NOT skip any events.
    - For a specific event (identified by its `event_ticker`), retrieve all **open markets**
      associated with that event.
-   - For each market, you have access to the full Kalshi market object (all fields).
-   - **ALWAYS include ALL of the following details for EVERY market**:
-     - Market ticker (unique identifier) - REQUIRED
-     - Market title/description - REQUIRED
-     - Market status (e.g., open/closed/active) - REQUIRED
-     - YES price (bid/ask or last trade price) - REQUIRED
-     - NO price (bid/ask or last trade price) - REQUIRED
-     - Open interest - REQUIRED
-     - Close time (closes date/time) - REQUIRED
-     - Expiration time (expires date/time) - REQUIRED
-     - Rules (`rules_primary`, `rules_secondary`) - REQUIRED
-     - Any other relevant market metadata
+   
+   **What `get_event_markets` returns:**
+   The function returns a dictionary with the following structure:
+   ```
+   {
+     "event_ticker": "KXBALANCE-29",
+     "markets": [
+       {
+         // Identifiers
+         "event_ticker": "KXBALANCE-29",
+         "ticker": "KXBALANCE-29",
+         "market_type": "binary",
+         
+         // Descriptions
+         "title": "Will Trump balance the budget?",
+         "subtitle": "",
+         "yes_sub_title": "During Trump's term",
+         "no_sub_title": "During Trump's term",
+         
+         // Current Pricing (in cents)
+         "yes_ask": 13,  // YES price in cents (what you pay to buy YES)
+         "no_ask": 90,   // NO price in cents (what you pay to buy NO)
+         
+         // Previous Pricing (in cents)
+         "previous_yes_ask": 12,
+         "previous_no_ask": 89,
+         
+         // Timing
+         "created_time": "2025-01-02 22:46:48.279373+00:00",
+         "open_time": "2025-01-03 15:00:00+00:00",
+         "close_time": "2029-07-01 14:00:00+00:00",
+         "expiration_time": "2029-07-01 14:00:00+00:00",
+         "settlement_timer_seconds": 1800,
+         
+         // Rules & Conditions
+         "rules_primary": "If there is not a budget deficit...",
+         "rules_secondary": "",
+         "early_close_condition": "This market will close and expire early if the event occurs.",
+         "can_close_early": true,
+         
+         // Trading Activity
+         "volume": 26257,
+         "volume_24h": 98,
+         "open_interest": 12798,
+         "liquidity_dollars": "37383.8900",
+         
+         // Market Structure
+         "tick_size": 1,
+         "floor_strike": null,
+         "cap_strike": null,
+         "functional_strike": null,
+         "custom_strike": null,
+         "price_ranges": [{"start": "0.0000", "end": "1.0000", "step": "0.0100"}],
+         
+         // Status & Results
+         "status": "active",
+         "result": "",
+         "category": "",
+         
+         // Other
+         "primary_participant_key": null
+       },
+       // ... more markets
+     ]
+   }
+   ```
+   
+   **Key fields to always include in your response:**
+   - Market ticker (unique identifier) - REQUIRED
+   - Market title/description - REQUIRED
+   - Market status (e.g., open/closed/active) - REQUIRED
+   - YES price (`yes_ask` in cents) - REQUIRED
+   - NO price (`no_ask` in cents) - REQUIRED
+   - Open interest - REQUIRED
+   - Close time (`close_time`) - REQUIRED
+   - Expiration time (`expiration_time`) - REQUIRED
+   - Rules (`rules_primary`, `rules_secondary`) - REQUIRED
+   - Any other relevant market metadata from the returned structure
    - **DO NOT** omit any market details - the root agent needs complete information to 
      properly display and categorize markets.
 
