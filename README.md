@@ -295,7 +295,7 @@ Once the web UI is open, you can:
 You can also import and use the agent programmatically:
 
 ```python
-from pred_market.agent import root_agent
+from pred_market_agent.agent import root_agent
 
 # The agent is now available as root_agent
 # You can interact with it through ADK's programmatic interface
@@ -394,7 +394,9 @@ There are two helper notebooks in `arbitrage_finding/`:
 
 ---
 
-## Usage Examples
+## Chatbot Usage Examples
+
+Below
 
 ### Example 1: Discovering Markets
 
@@ -501,7 +503,7 @@ There are two helper notebooks in `arbitrage_finding/`:
 **Error**: Agent doesn't appear in ADK web interface
 
 **Solution**:
-- Ensure you're running `adk web` from the project root directory (not from inside `pred_market/`)
+- Ensure you're running `adk web` from the project root directory (not from inside `pred_market_agent/`)
 - Check that `agent.py` exists and defines `root_agent`
 - Verify the agent name matches what ADK expects
 
@@ -519,13 +521,23 @@ PulseTrader/
 │       ├── get_events_agent/    # Market discovery
 │       ├── research_agent/     # Research with Perplexity Sonar Pro API
 │       └── trade_agent/         # Trade execution
+├── arbitrage_finding/        # Cross-platform arbitrage discovery pipeline
+│   ├── main.py               # Orchestrates the 3-step arbitrage pipeline
+│   ├── arbitrage_poly_kalshi.py        # Cross-platform similarity + markets
+│   ├── arbitrage_poly_kalshi_eval.py   # LLM prompt building and outputs
+│   ├── check_arbitrage_opportunities.py   # Uses live prices to find trades
+│   └── *.ipynb               # Notebooks for analysis/visualization
 ├── tools/                    # Utility scripts
-│   ├── kalshi_client.py      # Kalshi API client
-│   ├── markets.py            # Market data fetching
-│   └── ...
+│   ├── kalshi_client.py      # Kalshi API client helper
+│   ├── kalshi_events.py      # Kalshi events + embeddings index
+│   ├── kalshi_markets.py     # Kalshi market retrieval helpers
+│   ├── kalshi_trade.py       # Kalshi trading helper functions
+│   ├── polymarket.py         # Polymarket events, embeddings, and markets
+│   └── emb.py                # Shared embedding helpers (Gemini)
 ├── keys/                     # API keys (gitignored)
 │   └── llmfin.txt            # Kalshi private key
 ├── data/                     # Data files (gitignored)
+├── data_old/                 # Archived / snapshot data used in experiments
 ├── .env                      # Environment variables (gitignored)
 ├── requirements.txt          # Python dependencies
 └── README.md                # This file
