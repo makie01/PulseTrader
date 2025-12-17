@@ -396,7 +396,8 @@ There are two helper notebooks in `arbitrage_finding/`:
 
 ## Chatbot Usage Examples
 
-Below
+Below is also a link to a loom video demo of the chatbot:
+https://www.loom.com/share/e3036f1dea9b46cbb6e5fd5cc622979c
 
 ### Example 1: Discovering Markets
 
