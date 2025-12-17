@@ -38,8 +38,10 @@ except ImportError:
     from tools.polymarket import get_markets_for_event as get_polymarket_markets
 
 
-# Default location where we persist **all** cross-platform event candidates
+# Default location where we persist cross-platform event candidates
 CROSS_PLATFORM_CANDIDATES_CSV = "data/cross_platform_event_candidates.csv"
+# To avoid huge CSVs and long write times, cap how many candidates we save.
+CROSS_PLATFORM_CANDIDATES_MAX_ROWS = 5000
 
 
 def _save_all_candidates_to_csv(
@@ -47,7 +49,7 @@ def _save_all_candidates_to_csv(
     csv_path: str = CROSS_PLATFORM_CANDIDATES_CSV,
 ) -> None:
     """
-    Persist the full set of cross-platform event candidates to a CSV file.
+    Persist the (capped) set of cross-platform event candidates to a CSV file.
 
     This is intended for downstream evaluation / LLM inspection. We only need
     light metadata here; the full event payloads can be reloaded later using
@@ -55,6 +57,10 @@ def _save_all_candidates_to_csv(
     """
     if not candidates:
         return
+
+    # Keep only the top-N most similar candidates to avoid enormous CSVs.
+    # The list is expected to be pre-sorted by similarity (descending).
+    candidates = candidates[:CROSS_PLATFORM_CANDIDATES_MAX_ROWS]
 
     os.makedirs(os.path.dirname(csv_path) or ".", exist_ok=True)
 
@@ -334,4 +340,3 @@ if __name__ == "__main__":
                 print(f"      {market_id}: {question[:60]}...")
                 print(f"        YES price: {yes_price}, NO price: {no_price}")
         print()
-

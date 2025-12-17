@@ -1,23 +1,0 @@
-Finding cross-platform arbitrage opportunities (Polymarket <-> Kalshi)...
-Finding similar events across platforms (min similarity: 0.7)...
-Loading Kalshi events and embeddings...
-Loading Polymarket events and embeddings...
-Comparing 3389 Kalshi events with 4247 Polymarket events (14,393,083 pairs)...
-Comparing cross-platform event pairs:   0%|          | 0/14393083 [00:00<?, ?pairs/s]Comparing cross-platform event pairs:   0%|          | 15396/14393083 [00:00<04:47, 50054.96pairs/s]Comparing cross-platform event pairs:   0%|          | 20402/14393083 [00:00<09:30, 25175.77pairs/s]Comparing cross-platform event pairs:   1%|          | 157312/14393083 [00:00<00:51, 274584.00pairs/s]Comparing cross-platform event pairs:   2%|▏         | 250351/14393083 [00:00<00:34, 412013.61pairs/s]Comparing cross-platform event pairs:   2%|▏         | 335160/14393083 [00:01<00:27, 512483.84pairs/s]Comparing cross-platform event pairs:   3%|▎         | 414004/14393083 [00:03<02:18, 101006.52pairs/s]Comparing cross-platform event pairs:   4%|▎         | 534719/14393083 [00:03<01:23, 165112.83pairs/s]Comparing cross-platform event pairs:   4%|▍         | 610102/14393083 [00:03<01:14, 185538.99pairs/s]Comparing cross-platform event pairs:   5%|▍         | 670267/14393083 [00:03<01:02, 221007.01pairs/s]Comparing cross-platform event pairs:   5%|▌         | 729395/14393083 [00:04<02:08, 106531.43pairs/s]Comparing cross-platform event pairs:   6%|▌         | 851686/14393083 [00:05<01:17, 174187.79pairs/s]Comparing cross-platform event pairs:   7%|▋         | 996989/14393083 [00:05<00:48, 276083.36pairs/s]Comparing cross-platform event pairs:   8%|▊         | 1087592/14393083 [00:06<01:34, 141018.77pairs/s]Comparing cross-platform event pairs:   8%|▊         | 1215312/14393083 [00:06<01:04, 205805.46pairs/s]Comparing cross-platform event pairs:   9%|▉         | 1351432/14393083 [00:06<00:44, 292833.50pairs/s]Comparing cross-platform event pairs:  10%|█         | 1451106/14393083 [00:08<01:33, 139069.33pairs/s]Comparing cross-platform event pairs:  11%|█         | 1596764/14393083 [00:08<01:02, 205896.92pairs/s]Comparing cross-platform event pairs:  12%|█▏        | 1720811/14393083 [00:08<00:45, 275797.89pairs/s]Comparing cross-platform event pairs:  13%|█▎        | 1823646/14393083 [00:10<01:35, 131362.53pairs/s]Comparing cross-platform event pairs:  14%|█▎        | 1955571/14393083 [00:10<01:06, 186088.47pairs/s]Comparing cross-platform event pairs:  15%|█▍        | 2126407/14393083 [00:10<00:43, 280089.00pairs/s]Comparing cross-platform event pairs:  16%|█▌        | 2241427/14393083 [00:12<01:20, 150696.01pairs/s]Comparing cross-platform event pairs:  16%|█▋        | 2340772/14393083 [00:12<01:03, 190653.15pairs/s]Comparing cross-platform event pairs:  17%|█▋        | 2491769/14393083 [00:12<00:43, 274340.68pairs/s]Comparing cross-platform event pairs:  18%|█▊        | 2655578/14393083 [00:12<00:30, 387656.06pairs/s]Comparing cross-platform event pairs:  20%|█▉        | 2844555/14393083 [00:13<00:21, 547039.89pairs/s]Comparing cross-platform event pairs:  20%|██        | 2898795/14393083 [00:14<00:58, 195642.18pairs/s]
-Traceback (most recent call last):
-  File "/Users/maxsebrechts/Desktop/Master/Columbia/LLM Based GenAI/PulseTrader/./tools/arbitrage_poly_kalshi.py", line 245, in <module>
-    results = find_arbitrage_opportunities_cross_platform(
-        top_k_events=50,
-        min_event_similarity=0.7,
-        exclude_exact_duplicates=False,
-    )
-  File "/Users/maxsebrechts/Desktop/Master/Columbia/LLM Based GenAI/PulseTrader/./tools/arbitrage_poly_kalshi.py", line 198, in find_arbitrage_opportunities_cross_platform
-    similar_events = find_similar_cross_platform_events(
-        top_k=top_k_events,
-        min_similarity=min_event_similarity,
-        exclude_exact_duplicates=exclude_exact_duplicates,
-    )
-  File "/Users/maxsebrechts/Desktop/Master/Columbia/LLM Based GenAI/PulseTrader/./tools/arbitrage_poly_kalshi.py", line 159, in find_similar_cross_platform_events
-    pbar.update(1)
-    ~~~~~~~~~~~^^^
-KeyboardInterrupt

@@ -283,6 +283,21 @@ def setup_events_index(
     _EVENT_EMBEDS = embeds
 
 
+def ensure_events_index_on_disk(
+    events_path: str = DEFAULT_EVENTS_PATH,
+    embeds_path: str = DEFAULT_EMBEDS_PATH,
+) -> None:
+    """
+    Ensure that the Polymarket events JSON and embeddings index exist on disk.
+
+    - If both files already exist: do nothing.
+    - If one or both are missing: build them once via setup_events_index().
+    """
+    if os.path.exists(events_path) and os.path.exists(embeds_path):
+        return
+    setup_events_index(events_path=events_path, embeds_path=embeds_path)
+
+
 def search_open_events(
     topic: str,
     limit: int = 10,

@@ -1,1052 +1,0 @@
-Finding cross-platform arbitrage opportunities (Polymarket <-> Kalshi)...
-Finding similar events across platforms (min similarity: 0.7)...
-Loading Kalshi events and embeddings...
-Loading Polymarket events and embeddings...
-Comparing 3389 Kalshi events with 4247 Polymarket events (14,393,083 pairs)...
-Comparing cross-platform event pairs:   0%|          | 0/14393083 [00:00<?, ?pairs/s]Comparing cross-platform event pairs:   0%|          | 15360/14393083 [00:01<17:28, 13710.93pairs/s]Comparing cross-platform event pairs:   0%|          | 17779/14393083 [00:02<34:55, 6861.08pairs/s] Comparing cross-platform event pairs:   1%|          | 146714/14393083 [00:02<02:29, 95555.80pairs/s]Comparing cross-platform event pairs:   2%|▏         | 307926/14393083 [00:02<01:00, 231929.83pairs/s]Comparing cross-platform event pairs:   3%|▎         | 406719/14393083 [00:03<01:50, 126183.82pairs/s]Comparing cross-platform event pairs:   4%|▍         | 542996/14393083 [00:03<01:08, 201140.90pairs/s]Comparing cross-platform event pairs:   5%|▍         | 696658/14393083 [00:04<00:44, 307545.87pairs/s]Comparing cross-platform event pairs:   6%|▌         | 807173/14393083 [00:06<01:39, 136342.21pairs/s]Comparing cross-platform event pairs:   6%|▌         | 894254/14393083 [00:06<01:19, 170744.08pairs/s]Comparing cross-platform event pairs:   7%|▋         | 989156/14393083 [00:06<01:00, 220973.46pairs/s]Comparing cross-platform event pairs:   7%|▋         | 1071315/14393083 [00:07<01:42, 130264.85pairs/s]Comparing cross-platform event pairs:   8%|▊         | 1197021/14393083 [00:07<01:08, 191858.40pairs/s]Comparing cross-platform event pairs:   9%|▉         | 1280333/14393083 [00:07<00:55, 238306.87pairs/s]Comparing cross-platform event pairs:   9%|▉         | 1360760/14393083 [00:07<00:46, 277312.32pairs/s]Comparing cross-platform event pairs:  10%|▉         | 1432659/14393083 [00:09<01:51, 116141.11pairs/s]Comparing cross-platform event pairs:  11%|█         | 1555750/14393083 [00:09<01:12, 176583.21pairs/s]Comparing cross-platform event pairs:  12%|█▏        | 1700930/14393083 [00:09<00:47, 268257.36pairs/s]Comparing cross-platform event pairs:  12%|█▏        | 1795662/14393083 [00:11<01:25, 146547.92pairs/s]Comparing cross-platform event pairs:  13%|█▎        | 1942776/14393083 [00:11<00:56, 220128.97pairs/s]Comparing cross-platform event pairs:  15%|█▍        | 2088269/14393083 [00:11<00:39, 310911.57pairs/s]Comparing cross-platform event pairs:  16%|█▌        | 2231502/14393083 [00:13<01:09, 174968.81pairs/s]Comparing cross-platform event pairs:  17%|█▋        | 2410014/14393083 [00:13<00:45, 261660.89pairs/s]Comparing cross-platform event pairs:  18%|█▊        | 2586460/14393083 [00:13<00:31, 368993.97pairs/s]Comparing cross-platform event pairs:  19%|█▉        | 2768897/14393083 [00:13<00:23, 503267.14pairs/s]Comparing cross-platform event pairs:  20%|██        | 2913256/14393083 [00:15<00:56, 202510.78pairs/s]Comparing cross-platform event pairs:  21%|██▏       | 3078912/14393083 [00:15<00:40, 278421.62pairs/s]Comparing cross-platform event pairs:  22%|██▏       | 3225682/14393083 [00:15<00:30, 360962.62pairs/s]Comparing cross-platform event pairs:  24%|██▎       | 3409400/14393083 [00:15<00:22, 494125.16pairs/s]Comparing cross-platform event pairs:  25%|██▍       | 3592508/14393083 [00:15<00:16, 646744.25pairs/s]Comparing cross-platform event pairs:  26%|██▌       | 3758881/14393083 [00:17<00:49, 213341.02pairs/s]Comparing cross-platform event pairs:  27%|██▋       | 3925688/14393083 [00:17<00:36, 288051.72pairs/s]Comparing cross-platform event pairs:  28%|██▊       | 4082812/14393083 [00:17<00:27, 375619.70pairs/s]Comparing cross-platform event pairs:  29%|██▉       | 4244513/14393083 [00:17<00:20, 486015.49pairs/s]Comparing cross-platform event pairs:  31%|███       | 4430201/14393083 [00:18<00:15, 640540.74pairs/s]Comparing cross-platform event pairs:  32%|███▏      | 4596648/14393083 [00:18<00:12, 782554.76pairs/s]Comparing cross-platform event pairs:  33%|███▎      | 4756321/14393083 [00:20<00:56, 170579.84pairs/s]Comparing cross-platform event pairs:  34%|███▍      | 4908122/14393083 [00:21<00:41, 227289.78pairs/s]Comparing cross-platform event pairs:  35%|███▌      | 5100542/14393083 [00:21<00:28, 323529.88pairs/s]Comparing cross-platform event pairs:  37%|███▋      | 5281927/14393083 [00:21<00:20, 435227.72pairs/s]Comparing cross-platform event pairs:  38%|███▊      | 5444396/14393083 [00:21<00:16, 550266.07pairs/s]Comparing cross-platform event pairs:  39%|███▉      | 5602389/14393083 [00:21<00:13, 658210.34pairs/s]Comparing cross-platform event pairs:  40%|███▉      | 5753099/14393083 [00:21<00:11, 780954.26pairs/s]Comparing cross-platform event pairs:  41%|████      | 5915994/14393083 [00:21<00:09, 926131.15pairs/s]Comparing cross-platform event pairs:  42%|████▏     | 6069843/14393083 [00:25<01:12, 114936.19pairs/s]Comparing cross-platform event pairs:  43%|████▎     | 6178630/14393083 [00:25<00:57, 143198.27pairs/s]Comparing cross-platform event pairs:  44%|████▎     | 6282069/14393083 [00:26<00:45, 178622.32pairs/s]Comparing cross-platform event pairs:  44%|████▍     | 6382120/14393083 [00:26<00:36, 222173.57pairs/s]Comparing cross-platform event pairs:  45%|████▌     | 6478975/14393083 [00:26<00:29, 267184.09pairs/s]Comparing cross-platform event pairs:  46%|████▌     | 6566713/14393083 [00:26<00:25, 307229.42pairs/s]Comparing cross-platform event pairs:  46%|████▌     | 6645125/14393083 [00:26<00:22, 349235.73pairs/s]Comparing cross-platform event pairs:  47%|████▋     | 6718528/14393083 [00:26<00:19, 383760.97pairs/s]Comparing cross-platform event pairs:  47%|████▋     | 6786563/14393083 [00:26<00:19, 397643.43pairs/s]Comparing cross-platform event pairs:  48%|████▊     | 6847631/14393083 [00:27<00:17, 427169.84pairs/s]Comparing cross-platform event pairs:  48%|████▊     | 6948493/14393083 [00:27<00:13, 538759.23pairs/s]Comparing cross-platform event pairs:  49%|████▉     | 7020450/14393083 [00:27<00:13, 555095.40pairs/s]Comparing cross-platform event pairs:  49%|████▉     | 7116805/14393083 [00:27<00:11, 648232.24pairs/s]Comparing cross-platform event pairs:  50%|█████     | 7230992/14393083 [00:27<00:09, 769522.40pairs/s]Comparing cross-platform event pairs:  51%|█████▏    | 7378491/14393083 [00:27<00:07, 952813.15pairs/s]Comparing cross-platform event pairs:  52%|█████▏    | 7538362/14393083 [00:27<00:06, 1127650.12pairs/s]Comparing cross-platform event pairs:  53%|█████▎    | 7660451/14393083 [00:32<01:18, 85680.68pairs/s]  Comparing cross-platform event pairs:  54%|█████▍    | 7779245/14393083 [00:32<00:56, 117356.27pairs/s]Comparing cross-platform event pairs:  55%|█████▍    | 7898902/14393083 [00:32<00:40, 159912.54pairs/s]Comparing cross-platform event pairs:  56%|█████▌    | 8014603/14393083 [00:32<00:29, 213087.21pairs/s]Comparing cross-platform event pairs:  57%|█████▋    | 8176057/14393083 [00:32<00:19, 312298.41pairs/s]Comparing cross-platform event pairs:  58%|█████▊    | 8299312/14393083 [00:32<00:15, 396759.01pairs/s]Comparing cross-platform event pairs:  59%|█████▊    | 8453122/14393083 [00:32<00:11, 529121.05pairs/s]Comparing cross-platform event pairs:  60%|█████▉    | 8585502/14393083 [00:32<00:09, 618311.47pairs/s]Comparing cross-platform event pairs:  61%|██████    | 8709432/14393083 [00:33<00:07, 719723.50pairs/s]Comparing cross-platform event pairs:  61%|██████▏   | 8835376/14393083 [00:33<00:06, 821922.32pairs/s]Comparing cross-platform event pairs:  62%|██████▏   | 8985343/14393083 [00:33<00:05, 966223.86pairs/s]Comparing cross-platform event pairs:  63%|██████▎   | 9117484/14393083 [00:33<00:05, 1037960.42pairs/s]Comparing cross-platform event pairs:  64%|██████▍   | 9248386/14393083 [00:33<00:04, 1105159.75pairs/s]Comparing cross-platform event pairs:  65%|██████▌   | 9396085/14393083 [00:33<00:04, 1202407.06pairs/s]Comparing cross-platform event pairs:  66%|██████▋   | 9553817/14393083 [00:33<00:03, 1304384.31pairs/s]Comparing cross-platform event pairs:  67%|██████▋   | 9696124/14393083 [00:39<00:58, 80816.28pairs/s]  Comparing cross-platform event pairs:  68%|██████▊   | 9796494/14393083 [00:39<00:44, 102529.64pairs/s]Comparing cross-platform event pairs:  69%|██████▉   | 9896231/14393083 [00:39<00:34, 131301.50pairs/s]Comparing cross-platform event pairs:  70%|██████▉   | 10029129/14393083 [00:39<00:23, 184414.89pairs/s]Comparing cross-platform event pairs:  71%|███████   | 10166172/14393083 [00:39<00:16, 255075.55pairs/s]Comparing cross-platform event pairs:  72%|███████▏  | 10328595/14393083 [00:39<00:11, 362466.34pairs/s]Comparing cross-platform event pairs:  73%|███████▎  | 10484019/14393083 [00:39<00:08, 482550.57pairs/s]Comparing cross-platform event pairs:  74%|███████▍  | 10655588/14393083 [00:40<00:05, 637717.69pairs/s]Comparing cross-platform event pairs:  75%|███████▌  | 10832410/14393083 [00:40<00:04, 809301.97pairs/s]Comparing cross-platform event pairs:  76%|███████▋  | 10988779/14393083 [00:40<00:03, 939267.50pairs/s]Comparing cross-platform event pairs:  78%|███████▊  | 11166411/14393083 [00:40<00:02, 1108760.97pairs/s]Comparing cross-platform event pairs:  79%|███████▊  | 11328246/14393083 [00:40<00:03, 958262.39pairs/s] Comparing cross-platform event pairs:  80%|███████▉  | 11467509/14393083 [00:40<00:02, 1045445.28pairs/s]Comparing cross-platform event pairs:  81%|████████  | 11615229/14393083 [00:40<00:02, 1141655.94pairs/s]Comparing cross-platform event pairs:  82%|████████▏ | 11754959/14393083 [00:40<00:02, 1201023.24pairs/s]Comparing cross-platform event pairs:  83%|████████▎ | 11894350/14393083 [00:40<00:02, 1107705.69pairs/s]Comparing cross-platform event pairs:  84%|████████▎ | 12019745/14393083 [00:48<00:40, 58028.65pairs/s]  Comparing cross-platform event pairs:  85%|████████▍ | 12191896/14393083 [00:48<00:25, 87030.89pairs/s]Comparing cross-platform event pairs:  86%|████████▌ | 12346908/14393083 [00:48<00:16, 122587.30pairs/s]Comparing cross-platform event pairs:  87%|████████▋ | 12523048/14393083 [00:49<00:10, 177573.82pairs/s]Comparing cross-platform event pairs:  88%|████████▊ | 12700837/14393083 [00:49<00:06, 250772.00pairs/s]Comparing cross-platform event pairs:  89%|████████▉ | 12879172/14393083 [00:49<00:04, 344772.44pairs/s]Comparing cross-platform event pairs:  91%|█████████ | 13056873/14393083 [00:49<00:02, 460156.81pairs/s]Comparing cross-platform event pairs:  92%|█████████▏| 13222113/14393083 [00:49<00:02, 574542.48pairs/s]Comparing cross-platform event pairs:  93%|█████████▎| 13399620/14393083 [00:49<00:01, 726753.31pairs/s]Comparing cross-platform event pairs:  94%|█████████▍| 13583835/14393083 [00:49<00:00, 897837.14pairs/s]Comparing cross-platform event pairs:  96%|█████████▌| 13758465/14393083 [00:49<00:00, 1050335.00pairs/s]Comparing cross-platform event pairs:  97%|█████████▋| 13939227/14393083 [00:49<00:00, 1205053.02pairs/s]Comparing cross-platform event pairs:  98%|█████████▊| 14115252/14393083 [00:49<00:00, 1330484.02pairs/s]Comparing cross-platform event pairs:  99%|█████████▉| 14306911/14393083 [00:50<00:00, 1473493.31pairs/s]Comparing cross-platform event pairs: 100%|██████████| 14393083/14393083 [00:50<00:00, 287408.19pairs/s] 
-Found 50 similar event pairs. Fetching markets...
-Fetching markets for cross-platform event pairs:   0%|          | 0/50 [00:00<?, ?pair/s]Fetching markets for cross-platform event pairs:   2%|▏         | 1/50 [00:00<00:18,  2.66pair/s]Fetching markets for cross-platform event pairs:   4%|▍         | 2/50 [00:00<00:13,  3.48pair/s]Fetching markets for cross-platform event pairs:   6%|▌         | 3/50 [00:00<00:11,  3.92pair/s]Fetching markets for cross-platform event pairs:   8%|▊         | 4/50 [00:00<00:09,  4.71pair/s]Fetching markets for cross-platform event pairs:  10%|█         | 5/50 [00:01<00:09,  4.99pair/s]Fetching markets for cross-platform event pairs:  12%|█▏        | 6/50 [00:01<00:08,  5.07pair/s]Fetching markets for cross-platform event pairs:  14%|█▍        | 7/50 [00:01<00:07,  5.78pair/s]Fetching markets for cross-platform event pairs:  16%|█▌        | 8/50 [00:01<00:07,  5.73pair/s]Fetching markets for cross-platform event pairs:  18%|█▊        | 9/50 [00:01<00:07,  5.24pair/s]Fetching markets for cross-platform event pairs:  20%|██        | 10/50 [00:02<00:07,  5.47pair/s]Fetching markets for cross-platform event pairs:  22%|██▏       | 11/50 [00:02<00:07,  5.52pair/s]Fetching markets for cross-platform event pairs:  24%|██▍       | 12/50 [00:02<00:06,  5.83pair/s]Fetching markets for cross-platform event pairs:  26%|██▌       | 13/50 [00:02<00:05,  6.52pair/s]Fetching markets for cross-platform event pairs:  28%|██▊       | 14/50 [00:02<00:06,  5.76pair/s]Fetching markets for cross-platform event pairs:  30%|███       | 15/50 [00:02<00:06,  5.31pair/s]Fetching markets for cross-platform event pairs:  32%|███▏      | 16/50 [00:03<00:05,  5.68pair/s]Fetching markets for cross-platform event pairs:  34%|███▍      | 17/50 [00:03<00:05,  5.64pair/s]Fetching markets for cross-platform event pairs:  36%|███▌      | 18/50 [00:03<00:05,  5.48pair/s]Fetching markets for cross-platform event pairs:  38%|███▊      | 19/50 [00:03<00:05,  5.41pair/s]Fetching markets for cross-platform event pairs:  40%|████      | 20/50 [00:03<00:05,  5.61pair/s]Fetching markets for cross-platform event pairs:  42%|████▏     | 21/50 [00:03<00:05,  5.67pair/s]Fetching markets for cross-platform event pairs:  44%|████▍     | 22/50 [00:04<00:04,  6.00pair/s]Fetching markets for cross-platform event pairs:  46%|████▌     | 23/50 [00:04<00:04,  5.81pair/s]Fetching markets for cross-platform event pairs:  48%|████▊     | 24/50 [00:04<00:04,  5.59pair/s]Fetching markets for cross-platform event pairs:  50%|█████     | 25/50 [00:04<00:04,  5.79pair/s]Fetching markets for cross-platform event pairs:  52%|█████▏    | 26/50 [00:04<00:03,  6.15pair/s]Fetching markets for cross-platform event pairs:  54%|█████▍    | 27/50 [00:04<00:03,  5.82pair/s]Fetching markets for cross-platform event pairs:  56%|█████▌    | 28/50 [00:05<00:03,  6.10pair/s]Fetching markets for cross-platform event pairs:  58%|█████▊    | 29/50 [00:05<00:03,  5.82pair/s]Fetching markets for cross-platform event pairs:  60%|██████    | 30/50 [00:05<00:03,  5.27pair/s]Fetching markets for cross-platform event pairs:  62%|██████▏   | 31/50 [00:05<00:03,  5.85pair/s]Fetching markets for cross-platform event pairs:  64%|██████▍   | 32/50 [00:05<00:03,  5.61pair/s]Fetching markets for cross-platform event pairs:  66%|██████▌   | 33/50 [00:06<00:03,  5.48pair/s]Fetching markets for cross-platform event pairs:  68%|██████▊   | 34/50 [00:06<00:02,  5.77pair/s]Fetching markets for cross-platform event pairs:  70%|███████   | 35/50 [00:06<00:02,  5.58pair/s]Fetching markets for cross-platform event pairs:  72%|███████▏  | 36/50 [00:06<00:02,  5.56pair/s]Fetching markets for cross-platform event pairs:  74%|███████▍  | 37/50 [00:06<00:02,  5.94pair/s]Fetching markets for cross-platform event pairs:  76%|███████▌  | 38/50 [00:06<00:02,  5.58pair/s]Fetching markets for cross-platform event pairs:  78%|███████▊  | 39/50 [00:07<00:02,  5.46pair/s]Fetching markets for cross-platform event pairs:  80%|████████  | 40/50 [00:07<00:01,  5.82pair/s]Fetching markets for cross-platform event pairs:  82%|████████▏ | 41/50 [00:07<00:01,  5.61pair/s]Fetching markets for cross-platform event pairs:  84%|████████▍ | 42/50 [00:07<00:01,  5.77pair/s]Fetching markets for cross-platform event pairs:  86%|████████▌ | 43/50 [00:07<00:01,  6.14pair/s]Fetching markets for cross-platform event pairs:  88%|████████▊ | 44/50 [00:07<00:01,  5.80pair/s]Fetching markets for cross-platform event pairs:  90%|█████████ | 45/50 [00:08<00:00,  5.52pair/s]Fetching markets for cross-platform event pairs:  92%|█████████▏| 46/50 [00:08<00:00,  5.84pair/s]Fetching markets for cross-platform event pairs:  94%|█████████▍| 47/50 [00:08<00:00,  5.81pair/s]Fetching markets for cross-platform event pairs:  96%|█████████▌| 48/50 [00:08<00:00,  5.50pair/s]Fetching markets for cross-platform event pairs:  98%|█████████▊| 49/50 [00:08<00:00,  5.84pair/s]Fetching markets for cross-platform event pairs: 100%|██████████| 50/50 [00:09<00:00,  5.76pair/s]Fetching markets for cross-platform event pairs: 100%|██████████| 50/50 [00:09<00:00,  5.55pair/s]
-
-Found 50 similar event pairs across platforms:
-
-Event Pair 1:
-  Event Similarity: 0.9706
-  Kalshi Event: KXBTCMAX150-25
-    Title: When will Bitcoin hit $150k?
-    Markets: 6
-    Market prices:
-      KXBTCMAX150-25-26MAY31-149999.99: When will Bitcoin hit $150k?...
-        YES ask: 20, NO ask: 83
-      KXBTCMAX150-25-26APR30-149999.99: When will Bitcoin hit $150k?...
-        YES ask: 16, NO ask: 85
-      KXBTCMAX150-25-26MAR31-149999.99: When will Bitcoin hit $150k?...
-        YES ask: 12, NO ask: 89
-  Polymarket Event: 36173
-    Title: When will Bitcoin hit $150k?
-    Markets: 4
-    Market prices:
-      573653: Will Bitcoin hit $150k by December 31?...
-        YES price: 0.018, NO price: 0.993
-      573654: Will Bitcoin hit $150k by March 31, 2026?...
-        YES price: 0.12, NO price: 0.9299999999999999
-      573655: Will Bitcoin hit $150k by June 30, 2026?...
-        YES price: 0.22, NO price: 0.8
-
-Event Pair 2:
-  Event Similarity: 0.9530
-  Kalshi Event: KXGRETAGAZA-26JAN01
-    Title: Will Greta Thunberg enter Gaza this year?
-    Markets: 1
-    Market prices:
-      KXGRETAGAZA-26JAN01: Will Greta Thunberg visit Gaza before Jan 1, 2026?...
-        YES ask: 3, NO ask: 98
-  Polymarket Event: 40869
-    Title: Will Greta Thunberg enter Gaza by...?
-    Markets: 1
-    Market prices:
-      591900: Will Greta Thunberg enter Gaza by December 31?...
-        YES price: 0.008, NO price: 0.994
-
-Event Pair 3:
-  Event Similarity: 0.9488
-  Kalshi Event: KXBTCMAXY-25
-    Title: How high will Bitcoin get in 2025?
-    Markets: 12
-    Market prices:
-      KXBTCMAXY-25-DEC31-224999.99: How high will Bitcoin get this year?...
-        YES ask: 1, NO ask: 100
-      KXBTCMAXY-25-DEC31-189999.99: How high will Bitcoin get this year?...
-        YES ask: 1, NO ask: 100
-      KXBTCMAXY-25-DEC31-169999.99: How high will Bitcoin get this year?...
-        YES ask: 1, NO ask: 100
-  Polymarket Event: 36173
-    Title: When will Bitcoin hit $150k?
-    Markets: 4
-    Market prices:
-      573653: Will Bitcoin hit $150k by December 31?...
-        YES price: 0.018, NO price: 0.993
-      573654: Will Bitcoin hit $150k by March 31, 2026?...
-        YES price: 0.12, NO price: 0.9299999999999999
-      573655: Will Bitcoin hit $150k by June 30, 2026?...
-        YES price: 0.22, NO price: 0.8
-
-Event Pair 4:
-  Event Similarity: 0.9413
-  Kalshi Event: KXBTC2026200-27JAN01
-    Title: Will Bitcoin be above $200k by 2027?
-    Markets: 1
-    Market prices:
-      KXBTC2026200-27JAN01-200000: Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?...
-        YES ask: 18, NO ask: 83
-  Polymarket Event: 89502
-    Title: What price will Bitcoin hit before 2027?
-    Markets: 17
-    Market prices:
-      701486: Will Bitcoin reach $200,000 by December 31, 2026?...
-        YES price: 0.21, NO price: 0.84
-      701488: Will Bitcoin reach $180,000 by December 31, 2026?...
-        YES price: 0.18, NO price: 0.85
-      701490: Will Bitcoin reach $160,000 by December 31, 2026?...
-        YES price: 0.27, NO price: 0.76
-
-Event Pair 5:
-  Event Similarity: 0.9395
-  Kalshi Event: KXETHMAXY-25DEC31
-    Title: How high will Ethereum get in 2025?
-    Markets: 9
-    Market prices:
-      KXETHMAXY-25DEC31-6999.99: How high will Ethereum get this year?...
-        YES ask: 1, NO ask: 100
-      KXETHMAXY-25DEC31-6749.99: How high will Ethereum get this year?...
-        YES ask: 1, NO ask: 100
-      KXETHMAXY-25DEC31-6499.99: How high will Ethereum get this year?...
-        YES ask: 1, NO ask: 100
-  Polymarket Event: 89519
-    Title: What price will Ethereum hit before 2027?
-    Markets: 16
-    Market prices:
-      701539: Will Ethereum reach $10,000 by December 31, 2026?...
-        YES price: 0.18, NO price: 0.83
-      701541: Will Ethereum reach $7,500 by December 31, 2026?...
-        YES price: 0.26, NO price: 0.76
-      701543: Will Ethereum reach $6,500 by December 31, 2026?...
-        YES price: 0.35, NO price: 0.6799999999999999
-
-Event Pair 6:
-  Event Similarity: 0.9376
-  Kalshi Event: KXBTC2026250-27JAN01
-    Title: Will Bitcoin be above $250k by 2027?
-    Markets: 1
-    Market prices:
-      KXBTC2026250-27JAN01-250000: Will Bitcoin be above $250000 by Jan 1, 2027 at 12:00AM ET?...
-        YES ask: 11, NO ask: 91
-  Polymarket Event: 36173
-    Title: When will Bitcoin hit $150k?
-    Markets: 4
-    Market prices:
-      573653: Will Bitcoin hit $150k by December 31?...
-        YES price: 0.018, NO price: 0.993
-      573654: Will Bitcoin hit $150k by March 31, 2026?...
-        YES price: 0.12, NO price: 0.9299999999999999
-      573655: Will Bitcoin hit $150k by June 30, 2026?...
-        YES price: 0.22, NO price: 0.8
-
-Event Pair 7:
-  Event Similarity: 0.9375
-  Kalshi Event: KXBTC2026250-27JAN01
-    Title: Will Bitcoin be above $250k by 2027?
-    Markets: 1
-    Market prices:
-      KXBTC2026250-27JAN01-250000: Will Bitcoin be above $250000 by Jan 1, 2027 at 12:00AM ET?...
-        YES ask: 11, NO ask: 91
-  Polymarket Event: 89502
-    Title: What price will Bitcoin hit before 2027?
-    Markets: 17
-    Market prices:
-      701486: Will Bitcoin reach $200,000 by December 31, 2026?...
-        YES price: 0.21, NO price: 0.84
-      701488: Will Bitcoin reach $180,000 by December 31, 2026?...
-        YES price: 0.18, NO price: 0.85
-      701490: Will Bitcoin reach $160,000 by December 31, 2026?...
-        YES price: 0.27, NO price: 0.76
-
-Event Pair 8:
-  Event Similarity: 0.9374
-  Kalshi Event: KXBTC2026200-27JAN01
-    Title: Will Bitcoin be above $200k by 2027?
-    Markets: 1
-    Market prices:
-      KXBTC2026200-27JAN01-200000: Will Bitcoin be above $200000 by Jan 1, 2027 at 11:59PM ET?...
-        YES ask: 18, NO ask: 83
-  Polymarket Event: 36173
-    Title: When will Bitcoin hit $150k?
-    Markets: 4
-    Market prices:
-      573653: Will Bitcoin hit $150k by December 31?...
-        YES price: 0.018, NO price: 0.993
-      573654: Will Bitcoin hit $150k by March 31, 2026?...
-        YES price: 0.12, NO price: 0.9299999999999999
-      573655: Will Bitcoin hit $150k by June 30, 2026?...
-        YES price: 0.22, NO price: 0.8
-
-Event Pair 9:
-  Event Similarity: 0.9374
-  Kalshi Event: KXBTC2025100-25DEC31
-    Title: Will Bitcoin cross $100k again this year?
-    Markets: 1
-    Market prices:
-      KXBTC2025100-25DEC31-100000: Will Bitcoin be above $$100,000 by Dec 31, 2025 at 11:59pm E...
-        YES ask: 32, NO ask: 69
-  Polymarket Event: 36173
-    Title: When will Bitcoin hit $150k?
-    Markets: 4
-    Market prices:
-      573653: Will Bitcoin hit $150k by December 31?...
-        YES price: 0.018, NO price: 0.993
-      573654: Will Bitcoin hit $150k by March 31, 2026?...
-        YES price: 0.12, NO price: 0.9299999999999999
-      573655: Will Bitcoin hit $150k by June 30, 2026?...
-        YES price: 0.22, NO price: 0.8
-
-Event Pair 10:
-  Event Similarity: 0.9351
-  Kalshi Event: KXXRPMAXATH-26JAN01
-    Title: XRP all time high this year?
-    Markets: 1
-    Market prices:
-      KXXRPMAXATH-26JAN01: Will XRP reach all time high this year?...
-        YES ask: 8, NO ask: 96
-  Polymarket Event: 40777
-    Title: What price will XRP hit before 2026?
-    Markets: 4
-    Market prices:
-      584131: Will XRP reach $4.00 before 2026?...
-        YES price: 0.046, NO price: 0.984
-      584133: Will XRP reach $3.20 before 2026?...
-        YES price: 0.045, NO price: 0.96
-      584132: Will XRP reach $3.50 before 2026?...
-        YES price: 0.031, NO price: 0.977
-
-Event Pair 11:
-  Event Similarity: 0.9347
-  Kalshi Event: KXXRPMAXY-25DEC31
-    Title: How high will XRP get this year?
-    Markets: 3
-    Market prices:
-      KXXRPMAXY-25DEC31-4.99999: How high will XRP get this year?...
-        YES ask: 3, NO ask: 98
-      KXXRPMAXY-25DEC31-3.99999: How high will XRP get this year?...
-        YES ask: 5, NO ask: 97
-      KXXRPMAXY-25DEC31-3.74999: How high will XRP get this year?...
-        YES ask: 5, NO ask: 96
-  Polymarket Event: 40777
-    Title: What price will XRP hit before 2026?
-    Markets: 4
-    Market prices:
-      584131: Will XRP reach $4.00 before 2026?...
-        YES price: 0.046, NO price: 0.984
-      584133: Will XRP reach $3.20 before 2026?...
-        YES price: 0.045, NO price: 0.96
-      584132: Will XRP reach $3.50 before 2026?...
-        YES price: 0.031, NO price: 0.977
-
-Event Pair 12:
-  Event Similarity: 0.9346
-  Kalshi Event: KXBTCMAXY-25
-    Title: How high will Bitcoin get in 2025?
-    Markets: 12
-    Market prices:
-      KXBTCMAXY-25-DEC31-224999.99: How high will Bitcoin get this year?...
-        YES ask: 1, NO ask: 100
-      KXBTCMAXY-25-DEC31-189999.99: How high will Bitcoin get this year?...
-        YES ask: 1, NO ask: 100
-      KXBTCMAXY-25-DEC31-169999.99: How high will Bitcoin get this year?...
-        YES ask: 1, NO ask: 100
-  Polymarket Event: 89502
-    Title: What price will Bitcoin hit before 2027?
-    Markets: 17
-    Market prices:
-      701486: Will Bitcoin reach $200,000 by December 31, 2026?...
-        YES price: 0.21, NO price: 0.84
-      701488: Will Bitcoin reach $180,000 by December 31, 2026?...
-        YES price: 0.18, NO price: 0.85
-      701490: Will Bitcoin reach $160,000 by December 31, 2026?...
-        YES price: 0.27, NO price: 0.76
-
-Event Pair 13:
-  Event Similarity: 0.9335
-  Kalshi Event: KXXRPMAXY-25DEC31
-    Title: How high will XRP get this year?
-    Markets: 3
-    Market prices:
-      KXXRPMAXY-25DEC31-4.99999: How high will XRP get this year?...
-        YES ask: 3, NO ask: 98
-      KXXRPMAXY-25DEC31-3.99999: How high will XRP get this year?...
-        YES ask: 5, NO ask: 97
-      KXXRPMAXY-25DEC31-3.74999: How high will XRP get this year?...
-        YES ask: 5, NO ask: 96
-  Polymarket Event: 89530
-    Title: What price will XRP hit before 2027?
-    Markets: 20
-    Market prices:
-      701590: Will XRP reach $3.80 by December 31, 2026?...
-        YES price: 0.64, NO price: 0.9299999999999999
-      701594: Will XRP reach $3.00 by December 31, 2026?...
-        YES price: 0.73, NO price: 0.35
-      701602: Will XRP dip to $1.20 by December 31, 2026?...
-        YES price: 0.67, NO price: 0.6799999999999999
-
-Event Pair 14:
-  Event Similarity: 0.9324
-  Kalshi Event: KXDOGEMAX1
-    Title: When will Dogecoin hit $1?
-    Markets: 4
-    Market prices:
-      KXDOGEMAX1-27-JUN01-0.99999999: When will Dogecoin hit $1?...
-        YES ask: 14, NO ask: 88
-      KXDOGEMAX1-27-JAN01-0.99999999: When will Dogecoin hit $1?...
-        YES ask: 12, NO ask: 91
-      KXDOGEMAX1-26-JUN01-0.99999999: When will Dogecoin hit $1?...
-        YES ask: 6, NO ask: 95
-  Polymarket Event: 89554
-    Title: What price will Dogecoin hit before 2027?
-    Markets: 13
-    Market prices:
-      701708: Will Dogecoin reach $0.52 by December 31, 2026?...
-        YES price: 0.799, NO price: 0.983
-      701710: Will Dogecoin reach $0.44 by December 31, 2026?...
-        YES price: 0.93, NO price: 0.91
-      701712: Will Dogecoin reach $0.36 by December 31, 2026?...
-        YES price: 0.97, NO price: 0.92
-
-Event Pair 15:
-  Event Similarity: 0.9320
-  Kalshi Event: KXLINKMAXY-25
-    Title: How high will Chainlink get this year?
-    Markets: 3
-    Market prices:
-      KXLINKMAXY-25-39.99999: How high will Chainlink get this year?...
-        YES ask: 8, NO ask: 98
-      KXLINKMAXY-25-29.99999: How high will Chainlink get this year?...
-        YES ask: 10, NO ask: 99
-      KXLINKMAXY-25-27.49999: How high will Chainlink get this year?...
-        YES ask: 11, NO ask: 98
-  Polymarket Event: 89582
-    Title: What price will Chainlink hit before 2027?
-    Markets: 10
-    Market prices:
-      701835: Will Chainlink dip to $8 by December 31, 2026?...
-        YES price: 0.62, NO price: 0.78
-      701837: Will Chainlink dip to $4 by December 31, 2026?...
-        YES price: 0.94, NO price: 0.97
-      701827: Will Chainlink reach $24 by December 31, 2026?...
-        YES price: 0.65, NO price: 0.54
-
-Event Pair 16:
-  Event Similarity: 0.9311
-  Kalshi Event: KXBTCMINY-25
-    Title: How low will Bitcoin get in 2025?
-    Markets: 3
-    Market prices:
-      KXBTCMINY-25-DEC31-70000: How low will Bitcoin get this year?...
-        YES ask: 5, NO ask: 96
-      KXBTCMINY-25-DEC31-60000: How low will Bitcoin get this year?...
-        YES ask: 4, NO ask: 98
-      KXBTCMINY-25-DEC31-50000: How low will Bitcoin get this year?...
-        YES ask: 3, NO ask: 99
-  Polymarket Event: 36173
-    Title: When will Bitcoin hit $150k?
-    Markets: 4
-    Market prices:
-      573653: Will Bitcoin hit $150k by December 31?...
-        YES price: 0.018, NO price: 0.993
-      573654: Will Bitcoin hit $150k by March 31, 2026?...
-        YES price: 0.12, NO price: 0.9299999999999999
-      573655: Will Bitcoin hit $150k by June 30, 2026?...
-        YES price: 0.22, NO price: 0.8
-
-Event Pair 17:
-  Event Similarity: 0.9311
-  Kalshi Event: KXSOLD26-27JAN0100
-    Title: Price of Solana by end of 2026?
-    Markets: 8
-    Market prices:
-      KXSOLD26-27JAN0100-T99.99: SOL price  on Jan 1, 2027?...
-        YES ask: 84, NO ask: 25
-      KXSOLD26-27JAN0100-T449.99: SOL price  on Jan 1, 2027?...
-        YES ask: 10, NO ask: 99
-      KXSOLD26-27JAN0100-T399.99: SOL price  on Jan 1, 2027?...
-        YES ask: 27, NO ask: 99
-  Polymarket Event: 89525
-    Title: What price will Solana hit before 2027?
-    Markets: 17
-    Market prices:
-      701563: Will Solana reach $600 by December 31, 2026?...
-        YES price: 0.18, NO price: 0.94
-      701565: Will Solana reach $320 by December 31, 2026?...
-        YES price: 0.42, NO price: 0.88
-      701567: Will Solana reach $280 by December 31, 2026?...
-        YES price: 0.45, NO price: 0.92
-
-Event Pair 18:
-  Event Similarity: 0.9309
-  Kalshi Event: KXETHMINY-25DEC31
-    Title: How low will Ethereum get in 2025?
-    Markets: 7
-    Market prices:
-      KXETHMINY-25DEC31-999.99: How low will Ethereum get this year?...
-        YES ask: 3, NO ask: 99
-      KXETHMINY-25DEC31-2499.99: How low will Ethereum get this year?...
-        YES ask: 14, NO ask: 88
-      KXETHMINY-25DEC31-2249.99: How low will Ethereum get this year?...
-        YES ask: 8, NO ask: 94
-  Polymarket Event: 89519
-    Title: What price will Ethereum hit before 2027?
-    Markets: 16
-    Market prices:
-      701539: Will Ethereum reach $10,000 by December 31, 2026?...
-        YES price: 0.18, NO price: 0.83
-      701541: Will Ethereum reach $7,500 by December 31, 2026?...
-        YES price: 0.26, NO price: 0.76
-      701543: Will Ethereum reach $6,500 by December 31, 2026?...
-        YES price: 0.35, NO price: 0.6799999999999999
-
-Event Pair 19:
-  Event Similarity: 0.9297
-  Kalshi Event: KXLARGECUT-25
-    Title: Will the Fed do a rate cut of more than 25bps in 2025?
-    Markets: 1
-    Market prices:
-      KXLARGECUT-25: Will the Fed cut rates more than 25 bps in 2025?...
-        YES ask: 2, NO ask: 100
-  Polymarket Event: 16085
-    Title: How many Fed rate cuts in 2025?
-    Markets: 7
-    Market prices:
-      516730: Will 7 Fed rate cuts happen in 2025?...
-        YES price: 0.001, NO price: None
-      516725: Will 2 Fed rate cuts happen in 2025?...
-        YES price: 0.043, NO price: 0.968
-      516731: Will 6 Fed rate cuts happen in 2025?...
-        YES price: 0.001, NO price: None
-
-Event Pair 20:
-  Event Similarity: 0.9292
-  Kalshi Event: KXDOGEMAX1
-    Title: When will Dogecoin hit $1?
-    Markets: 4
-    Market prices:
-      KXDOGEMAX1-27-JUN01-0.99999999: When will Dogecoin hit $1?...
-        YES ask: 14, NO ask: 88
-      KXDOGEMAX1-27-JAN01-0.99999999: When will Dogecoin hit $1?...
-        YES ask: 12, NO ask: 91
-      KXDOGEMAX1-26-JUN01-0.99999999: When will Dogecoin hit $1?...
-        YES ask: 6, NO ask: 95
-  Polymarket Event: 95978
-    Title: What price will Dogecoin hit in December?
-    Markets: 5
-    Market prices:
-      800762: Will Dogecoin reach $0.20 in December?...
-        YES price: 0.23, NO price: 0.84
-      800764: Will Dogecoin dip to $0.13 in December?...
-        YES price: 0.63, NO price: 0.45999999999999996
-      800766: Will Dogecoin dip to $0.03 in December?...
-        YES price: 0.008, NO price: 0.994
-
-Event Pair 21:
-  Event Similarity: 0.9291
-  Kalshi Event: KXXRPMINY-25DEC31
-    Title: How low will XRP get this year?
-    Markets: 2
-    Market prices:
-      KXXRPMINY-25DEC31-1.5: How low will XRP get this year?...
-        YES ask: 14, NO ask: 88
-      KXXRPMINY-25DEC31-1.0: How low will XRP get this year?...
-        YES ask: 7, NO ask: 100
-  Polymarket Event: 40777
-    Title: What price will XRP hit before 2026?
-    Markets: 4
-    Market prices:
-      584131: Will XRP reach $4.00 before 2026?...
-        YES price: 0.046, NO price: 0.984
-      584133: Will XRP reach $3.20 before 2026?...
-        YES price: 0.045, NO price: 0.96
-      584132: Will XRP reach $3.50 before 2026?...
-        YES price: 0.031, NO price: 0.977
-
-Event Pair 22:
-  Event Similarity: 0.9282
-  Kalshi Event: KXLINKMINY-25
-    Title: How low will Chainlink get this year?
-    Markets: 3
-    Market prices:
-      KXLINKMINY-25-9: How low will Chainlink get this year?...
-        YES ask: 19, NO ask: 89
-      KXLINKMINY-25-8: How low will Chainlink get this year?...
-        YES ask: 12, NO ask: 96
-      KXLINKMINY-25-10: How low will Chainlink get this year?...
-        YES ask: 29, NO ask: 80
-  Polymarket Event: 89582
-    Title: What price will Chainlink hit before 2027?
-    Markets: 10
-    Market prices:
-      701835: Will Chainlink dip to $8 by December 31, 2026?...
-        YES price: 0.62, NO price: 0.78
-      701837: Will Chainlink dip to $4 by December 31, 2026?...
-        YES price: 0.94, NO price: 0.97
-      701827: Will Chainlink reach $24 by December 31, 2026?...
-        YES price: 0.65, NO price: 0.54
-
-Event Pair 23:
-  Event Similarity: 0.9277
-  Kalshi Event: KXRATECUTCOUNT-25DEC31
-    Title: Number of rate cuts in 2025?
-    Markets: 13
-    Market prices:
-      KXRATECUTCOUNT-25DEC31-T9: Will the Fed cut rates 9 times?...
-        YES ask: 1, NO ask: 100
-      KXRATECUTCOUNT-25DEC31-T8: Will the Fed cut rates 8 times?...
-        YES ask: 1, NO ask: 100
-      KXRATECUTCOUNT-25DEC31-T7: Will the Fed cut rates 7 times?...
-        YES ask: 1, NO ask: 100
-  Polymarket Event: 16085
-    Title: How many Fed rate cuts in 2025?
-    Markets: 7
-    Market prices:
-      516730: Will 7 Fed rate cuts happen in 2025?...
-        YES price: 0.001, NO price: None
-      516725: Will 2 Fed rate cuts happen in 2025?...
-        YES price: 0.043, NO price: 0.968
-      516731: Will 6 Fed rate cuts happen in 2025?...
-        YES price: 0.001, NO price: None
-
-Event Pair 24:
-  Event Similarity: 0.9276
-  Kalshi Event: KXBUYBTC-25
-    Title: Will the Senate pass an act to buy 1m BTC this year?
-    Markets: 1
-    Market prices:
-      KXBUYBTC-25-DEC31: Will a bill that authorizes the U.S. government to purchase ...
-        YES ask: 7, NO ask: 100
-  Polymarket Event: 21264
-    Title: Senate passes bill to purchase 1m Bitcoin in 2025?
-    Markets: 1
-    Market prices:
-      529016: Senate passes bill to purchase 1m Bitcoin in 2025?...
-        YES price: 0.023, NO price: 0.98
-
-Event Pair 25:
-  Event Similarity: 0.9270
-  Kalshi Event: KXBOASTABLE-25
-    Title: Will Bank of America launch a stablecoin in 2025?
-    Markets: 1
-    Market prices:
-      KXBOASTABLE-25: Will Bank of America launch a stablecoin in 2025?...
-        YES ask: 5, NO ask: 100
-  Polymarket Event: 19687
-    Title: BOA launches a USD stablecoin in 2025?
-    Markets: 1
-    Market prices:
-      525283: BOA launches a USD stablecoin in 2025?...
-        YES price: 0.026, NO price: 0.989
-
-Event Pair 26:
-  Event Similarity: 0.9270
-  Kalshi Event: KXXRPMINY-25DEC31
-    Title: How low will XRP get this year?
-    Markets: 2
-    Market prices:
-      KXXRPMINY-25DEC31-1.5: How low will XRP get this year?...
-        YES ask: 14, NO ask: 88
-      KXXRPMINY-25DEC31-1.0: How low will XRP get this year?...
-        YES ask: 7, NO ask: 100
-  Polymarket Event: 89530
-    Title: What price will XRP hit before 2027?
-    Markets: 20
-    Market prices:
-      701590: Will XRP reach $3.80 by December 31, 2026?...
-        YES price: 0.64, NO price: 0.9299999999999999
-      701594: Will XRP reach $3.00 by December 31, 2026?...
-        YES price: 0.73, NO price: 0.35
-      701602: Will XRP dip to $1.20 by December 31, 2026?...
-        YES price: 0.67, NO price: 0.6799999999999999
-
-Event Pair 27:
-  Event Similarity: 0.9268
-  Kalshi Event: KXXRPMAXATH-26JAN01
-    Title: XRP all time high this year?
-    Markets: 1
-    Market prices:
-      KXXRPMAXATH-26JAN01: Will XRP reach all time high this year?...
-        YES ask: 8, NO ask: 96
-  Polymarket Event: 89530
-    Title: What price will XRP hit before 2027?
-    Markets: 20
-    Market prices:
-      701590: Will XRP reach $3.80 by December 31, 2026?...
-        YES price: 0.64, NO price: 0.9299999999999999
-      701594: Will XRP reach $3.00 by December 31, 2026?...
-        YES price: 0.73, NO price: 0.35
-      701602: Will XRP dip to $1.20 by December 31, 2026?...
-        YES price: 0.67, NO price: 0.6799999999999999
-
-Event Pair 28:
-  Event Similarity: 0.9265
-  Kalshi Event: KXNFLNFCSOUTH-25
-    Title: NFC South Division Winner?
-    Markets: 2
-    Market prices:
-      KXNFLNFCSOUTH-25-CAR: Pro Football NFC South Division Winner?...
-        YES ask: 30, NO ask: 71
-      KXNFLNFCSOUTH-25-TB: Pro Football NFC South Division Winner?...
-        YES ask: 72, NO ask: 30
-  Polymarket Event: 23667
-    Title: NFC South Winner
-    Markets: 2
-    Market prices:
-      540298: Will the Tampa Bay Buccaneers win the NFC South?...
-        YES price: 0.72, NO price: 0.31000000000000005
-      540301: Will the Carolina Panthers win the NFC South?...
-        YES price: 0.311, NO price: 0.723
-
-Event Pair 29:
-  Event Similarity: 0.9264
-  Kalshi Event: KXETHMAXY-25DEC31
-    Title: How high will Ethereum get in 2025?
-    Markets: 9
-    Market prices:
-      KXETHMAXY-25DEC31-6999.99: How high will Ethereum get this year?...
-        YES ask: 1, NO ask: 100
-      KXETHMAXY-25DEC31-6749.99: How high will Ethereum get this year?...
-        YES ask: 1, NO ask: 100
-      KXETHMAXY-25DEC31-6499.99: How high will Ethereum get this year?...
-        YES ask: 1, NO ask: 100
-  Polymarket Event: 16097
-    Title: What price will Ethereum hit in 2025?
-    Markets: 10
-    Market prices:
-      516876: Will Ethereum hit $7,000 by December 31?...
-        YES price: 0.006, NO price: 0.996
-      516874: Will Ethereum hit $10,000 by December 31?...
-        YES price: 0.004, NO price: 0.997
-      516875: Will Ethereum hit $8,000 by December 31?...
-        YES price: 0.005, NO price: 0.997
-
-Event Pair 30:
-  Event Similarity: 0.9253
-  Kalshi Event: KXFDVLIGHTER-25DEC31
-    Title: What will Lighter FDV be 1 day after launch?
-    Markets: 6
-    Market prices:
-      KXFDVLIGHTER-25DEC31-8: What will Lighter FDV be at 10:00 AM ET 1 day after launch?...
-        YES ask: 11, NO ask: 98
-      KXFDVLIGHTER-25DEC31-5: What will Lighter FDV be at 10:00 AM ET 1 day after launch?...
-        YES ask: 38, NO ask: 68
-      KXFDVLIGHTER-25DEC31-2: What will Lighter FDV be at 10:00 AM ET 1 day after launch?...
-        YES ask: 84, NO ask: 19
-  Polymarket Event: 28997
-    Title: Lighter market cap (FDV) one day after launch?
-    Markets: 8
-    Market prices:
-      556033: Lighter market cap (FDV) >$2B one day after launch?...
-        YES price: 0.55, NO price: 0.47
-      556034: Lighter market cap (FDV) >$6B one day after launch?...
-        YES price: 0.069, NO price: 0.9319999999999999
-      606843: Lighter market cap (FDV) >$8B one day after launch?...
-        YES price: 0.039, NO price: 0.964
-
-Event Pair 31:
-  Event Similarity: 0.9252
-  Kalshi Event: KXBTCMINY-25
-    Title: How low will Bitcoin get in 2025?
-    Markets: 3
-    Market prices:
-      KXBTCMINY-25-DEC31-70000: How low will Bitcoin get this year?...
-        YES ask: 5, NO ask: 96
-      KXBTCMINY-25-DEC31-60000: How low will Bitcoin get this year?...
-        YES ask: 4, NO ask: 98
-      KXBTCMINY-25-DEC31-50000: How low will Bitcoin get this year?...
-        YES ask: 3, NO ask: 99
-  Polymarket Event: 89502
-    Title: What price will Bitcoin hit before 2027?
-    Markets: 17
-    Market prices:
-      701486: Will Bitcoin reach $200,000 by December 31, 2026?...
-        YES price: 0.21, NO price: 0.84
-      701488: Will Bitcoin reach $180,000 by December 31, 2026?...
-        YES price: 0.18, NO price: 0.85
-      701490: Will Bitcoin reach $160,000 by December 31, 2026?...
-        YES price: 0.27, NO price: 0.76
-
-Event Pair 32:
-  Event Similarity: 0.9252
-  Kalshi Event: KXBTCMAXY-25
-    Title: How high will Bitcoin get in 2025?
-    Markets: 12
-    Market prices:
-      KXBTCMAXY-25-DEC31-224999.99: How high will Bitcoin get this year?...
-        YES ask: 1, NO ask: 100
-      KXBTCMAXY-25-DEC31-189999.99: How high will Bitcoin get this year?...
-        YES ask: 1, NO ask: 100
-      KXBTCMAXY-25-DEC31-169999.99: How high will Bitcoin get this year?...
-        YES ask: 1, NO ask: 100
-  Polymarket Event: 16096
-    Title: What price will Bitcoin hit in 2025?
-    Markets: 19
-    Market prices:
-      516861: Will Bitcoin reach $1,000,000 by December 31, 2025?...
-        YES price: 0.002, NO price: 0.999
-      516862: Will Bitcoin reach $250,000 by December 31, 2025?...
-        YES price: 0.003, NO price: 0.998
-      516863: Will Bitcoin reach $200,000 by December 31, 2025?...
-        YES price: 0.004, NO price: 0.997
-
-Event Pair 33:
-  Event Similarity: 0.9245
-  Kalshi Event: KXNFLNFCEAST-25
-    Title: NFC East Division Winner?
-    Markets: 2
-    Market prices:
-      KXNFLNFCEAST-25-PHI: Pro Football NFC East Division Winner?...
-        YES ask: 89, NO ask: 12
-      KXNFLNFCEAST-25-DAL: Pro Football NFC East Division Winner?...
-        YES ask: 11, NO ask: 90
-  Polymarket Event: 23664
-    Title: NFC East Winner
-    Markets: 2
-    Market prices:
-      540286: Will the Philadelphia Eagles win the NFC East?...
-        YES price: 0.907, NO price: 0.15300000000000002
-      540287: Will the Dallas Cowboys win the NFC East?...
-        YES price: 0.146, NO price: 0.907
-
-Event Pair 34:
-  Event Similarity: 0.9245
-  Kalshi Event: KXETHMAXY-25DEC31
-    Title: How high will Ethereum get in 2025?
-    Markets: 9
-    Market prices:
-      KXETHMAXY-25DEC31-6999.99: How high will Ethereum get this year?...
-        YES ask: 1, NO ask: 100
-      KXETHMAXY-25DEC31-6749.99: How high will Ethereum get this year?...
-        YES ask: 1, NO ask: 100
-      KXETHMAXY-25DEC31-6499.99: How high will Ethereum get this year?...
-        YES ask: 1, NO ask: 100
-  Polymarket Event: 95955
-    Title: What price will Ethereum hit in December?
-    Markets: 13
-    Market prices:
-      800445: Will Ethereum reach $4,600 in December?...
-        YES price: 0.054, NO price: 0.955
-      800447: Will Ethereum reach $4,400 in December?...
-        YES price: 0.09, NO price: 0.925
-      800463: Will Ethereum dip to $2,400 in December?...
-        YES price: 0.11, NO price: 0.91
-
-Event Pair 35:
-  Event Similarity: 0.9244
-  Kalshi Event: KXSOLANAATH-26JAN01
-    Title: Will Solana hit a new all time high in 2025?
-    Markets: 1
-    Market prices:
-      KXSOLANAATH-26JAN01: Will the spot price of Solana be above $294.096 before Jan 1...
-        YES ask: 4, NO ask: 97
-  Polymarket Event: 89525
-    Title: What price will Solana hit before 2027?
-    Markets: 17
-    Market prices:
-      701563: Will Solana reach $600 by December 31, 2026?...
-        YES price: 0.18, NO price: 0.94
-      701565: Will Solana reach $320 by December 31, 2026?...
-        YES price: 0.42, NO price: 0.88
-      701567: Will Solana reach $280 by December 31, 2026?...
-        YES price: 0.45, NO price: 0.92
-
-Event Pair 36:
-  Event Similarity: 0.9236
-  Kalshi Event: KXNFLNFCNORTH-25
-    Title: NFC North Division Winner?
-    Markets: 3
-    Market prices:
-      KXNFLNFCNORTH-25-GB: Pro Football NFC North Division Winner?...
-        YES ask: 69, NO ask: 32
-      KXNFLNFCNORTH-25-DET: Pro Football NFC North Division Winner?...
-        YES ask: 9, NO ask: 92
-      KXNFLNFCNORTH-25-CHI: Pro Football NFC North Division Winner?...
-        YES ask: 25, NO ask: 76
-  Polymarket Event: 23666
-    Title: NFC North Winner 
-    Markets: 3
-    Market prices:
-      540294: Will the Detroit Lions win the NFC North?...
-        YES price: 0.094, NO price: 0.9390000000000001
-      540295: Will the Green Bay Packers win the NFC North?...
-        YES price: 0.7, NO price: 0.35
-      540297: Will the Chicago Bears win the NFC North?...
-        YES price: 0.249, NO price: 0.792
-
-Event Pair 37:
-  Event Similarity: 0.9236
-  Kalshi Event: KXFIFAUSPULLGAME-26JUN11
-    Title: Will any 2026 FIFA World Cup game scheduled in the U.S. be relocated abroad before Jun 11, 2026?
-    Markets: 1
-    Market prices:
-      KXFIFAUSPULLGAME-26JUN11: Will any 2026 FIFA World Cup game scheduled in the U.S. be r...
-        YES ask: 7, NO ask: 98
-  Polymarket Event: 38368
-    Title: Will any 2026 FIFA World Cup game scheduled in the U.S. be relocated abroad?
-    Markets: 1
-    Market prices:
-      578157: Will any 2026 FIFA World Cup game scheduled in the U.S. be r...
-        YES price: 0.95, NO price: 0.9
-
-Event Pair 38:
-  Event Similarity: 0.9234
-  Kalshi Event: KXXRPMAXY-25DEC31
-    Title: How high will XRP get this year?
-    Markets: 3
-    Market prices:
-      KXXRPMAXY-25DEC31-4.99999: How high will XRP get this year?...
-        YES ask: 3, NO ask: 98
-      KXXRPMAXY-25DEC31-3.99999: How high will XRP get this year?...
-        YES ask: 5, NO ask: 97
-      KXXRPMAXY-25DEC31-3.74999: How high will XRP get this year?...
-        YES ask: 5, NO ask: 96
-  Polymarket Event: 95977
-    Title: What price will XRP hit in December?
-    Markets: 12
-    Market prices:
-      800639: Will XRP reach $2.80 in December?...
-        YES price: 0.1, NO price: 0.94
-      800643: Will XRP dip to $1.90 in December?...
-        YES price: 0.61, NO price: 0.44999999999999996
-      800647: Will XRP dip to $1.10 in December?...
-        YES price: 0.033, NO price: 0.992
-
-Event Pair 39:
-  Event Similarity: 0.9230
-  Kalshi Event: KXNFLAFCNORTH-25
-    Title: AFC North Division Winner?
-    Markets: 3
-    Market prices:
-      KXNFLAFCNORTH-25-PIT: Pro Football AFC North Division Winner?...
-        YES ask: 60, NO ask: 42
-      KXNFLAFCNORTH-25-CIN: Pro Football AFC North Division Winner?...
-        YES ask: 5, NO ask: 96
-      KXNFLAFCNORTH-25-BAL: Pro Football AFC North Division Winner?...
-        YES ask: 40, NO ask: 61
-  Polymarket Event: 23659
-    Title: AFC North Winner 
-    Markets: 3
-    Market prices:
-      540270: Will the Pittsburgh Steelers win the AFC North?...
-        YES price: 0.62, NO price: 0.41000000000000003
-      540271: Will the Cincinnati Bengals win the AFC North?...
-        YES price: 0.05, NO price: 0.979
-      540272: Will the Baltimore Ravens win the AFC North?...
-        YES price: 0.39, NO price: 0.64
-
-Event Pair 40:
-  Event Similarity: 0.9226
-  Kalshi Event: KXLCPIMAXYOY-25
-    Title: How high will the inflation level get in 2025?
-    Markets: 3
-    Market prices:
-      KXLCPIMAXYOY-25-P7.99: Inflation surge in Dec 10, 2025?...
-        YES ask: 1, NO ask: 100
-      KXLCPIMAXYOY-25-P4.99: Inflation surge in Dec 10, 2025?...
-        YES ask: 1, NO ask: 100
-      KXLCPIMAXYOY-25-P3.99: Inflation surge in Dec 10, 2025?...
-        YES ask: 2, NO ask: 100
-  Polymarket Event: 17880
-    Title: How high will inflation get in 2025?
-    Markets: 6
-    Market prices:
-      522147: Will inflation reach more than 5% in 2025?...
-        YES price: 0.009, NO price: 0.993
-      522148: Will inflation reach more than 6% in 2025?...
-        YES price: 0.007, NO price: 0.996
-      522149: Will inflation reach more than 8% in 2025?...
-        YES price: 0.005, NO price: 0.997
-
-Event Pair 41:
-  Event Similarity: 0.9223
-  Kalshi Event: KXNFLNFCCHAMP-25
-    Title: NFC Championship Winner?
-    Markets: 11
-    Market prices:
-      KXNFLNFCCHAMP-25-TB: Pro Football NFC Championship Winner?...
-        YES ask: 4, NO ask: 97
-      KXNFLNFCCHAMP-25-SF: Pro Football NFC Championship Winner?...
-        YES ask: 8, NO ask: 93
-      KXNFLNFCCHAMP-25-SEA: Pro Football NFC Championship Winner?...
-        YES ask: 20, NO ask: 81
-  Polymarket Event: 23657
-    Title: NFC Champion 
-    Markets: 11
-    Market prices:
-      540240: Will the Panthers win the NFC Championship?...
-        YES price: 0.032, NO price: 0.988
-      540241: Will the Bears win the NFC Championship?...
-        YES price: 0.057, NO price: 0.948
-      540242: Will the Cowboys win the NFC Championship?...
-        YES price: 0.018, NO price: 0.993
-
-Event Pair 42:
-  Event Similarity: 0.9222
-  Kalshi Event: KXDOGE-25DEC0921
-    Title: Dogecoin price range on Dec 9, 2025 at 9pm EST?
-    Markets: 0
-  Polymarket Event: 95978
-    Title: What price will Dogecoin hit in December?
-    Markets: 5
-    Market prices:
-      800762: Will Dogecoin reach $0.20 in December?...
-        YES price: 0.23, NO price: 0.84
-      800764: Will Dogecoin dip to $0.13 in December?...
-        YES price: 0.63, NO price: 0.45999999999999996
-      800766: Will Dogecoin dip to $0.03 in December?...
-        YES price: 0.008, NO price: 0.994
-
-Event Pair 43:
-  Event Similarity: 0.9220
-  Kalshi Event: KXLINKMAXY-25
-    Title: How high will Chainlink get this year?
-    Markets: 3
-    Market prices:
-      KXLINKMAXY-25-39.99999: How high will Chainlink get this year?...
-        YES ask: 8, NO ask: 98
-      KXLINKMAXY-25-29.99999: How high will Chainlink get this year?...
-        YES ask: 10, NO ask: 99
-      KXLINKMAXY-25-27.49999: How high will Chainlink get this year?...
-        YES ask: 11, NO ask: 98
-  Polymarket Event: 95360
-    Title: What price will Chainlink hit in December?
-    Markets: 9
-    Market prices:
-      791716: Will Chainlink reach $24 in December?...
-        YES price: 0.141, NO price: 0.963
-      791718: Will Chainlink reach $20 in December?...
-        YES price: 0.59, NO price: 0.96
-      791720: Will Chainlink reach $16 in December?...
-        YES price: 0.61, NO price: 0.47
-
-Event Pair 44:
-  Event Similarity: 0.9219
-  Kalshi Event: KXETH-25DEC0921
-    Title: Ethereum price range on Dec 9, 2025 at 9pm EST?
-    Markets: 0
-  Polymarket Event: 95955
-    Title: What price will Ethereum hit in December?
-    Markets: 13
-    Market prices:
-      800445: Will Ethereum reach $4,600 in December?...
-        YES price: 0.054, NO price: 0.955
-      800447: Will Ethereum reach $4,400 in December?...
-        YES price: 0.09, NO price: 0.925
-      800463: Will Ethereum dip to $2,400 in December?...
-        YES price: 0.11, NO price: 0.91
-
-Event Pair 45:
-  Event Similarity: 0.9214
-  Kalshi Event: KXNFLNFCWEST-25
-    Title: NFC West Division Winner?
-    Markets: 3
-    Market prices:
-      KXNFLNFCWEST-25-SF: Pro Football NFC West Division Winner?...
-        YES ask: 13, NO ask: 89
-      KXNFLNFCWEST-25-SEA: Pro Football NFC West Division Winner?...
-        YES ask: 33, NO ask: 68
-      KXNFLNFCWEST-25-LA: Pro Football NFC West Division Winner?...
-        YES ask: 58, NO ask: 45
-  Polymarket Event: 23665
-    Title: NFC West Winner 
-    Markets: 3
-    Market prices:
-      540290: Will the San Francisco 49ers win the NFC West?...
-        YES price: 0.15, NO price: 0.87
-      540291: Will the Los Angeles Rams win the NFC West?...
-        YES price: 0.56, NO price: 0.47
-      540292: Will the Seattle Seahawks win the NFC West?...
-        YES price: 0.34, NO price: 0.69
-
-Event Pair 46:
-  Event Similarity: 0.9214
-  Kalshi Event: KXFDVMEGAETH-27JAN01
-    Title: What will MegaETH FDV be at 10:00 AM ET 1 day after launch?
-    Markets: 4
-    Market prices:
-      KXFDVMEGAETH-27JAN01-8000000000: Will MegaETH FDV be above $8000000000 at 10:00 AM ET on Jan ...
-        YES ask: 6, NO ask: 100
-      KXFDVMEGAETH-27JAN01-5000000000: Will MegaETH FDV be above $5000000000 at 10:00 AM ET on Jan ...
-        YES ask: 17, NO ask: 92
-      KXFDVMEGAETH-27JAN01-2000000000: Will MegaETH FDV be above $2000000000 at 10:00 AM ET on Jan ...
-        YES ask: 84, NO ask: 22
-  Polymarket Event: 28999
-    Title: MegaETH market cap (FDV) one day after launch?
-    Markets: 4
-    Market prices:
-      556062: MegaETH market cap (FDV) >$2B one day after launch?...
-        YES price: 0.76, NO price: 0.27
-      556063: MegaETH market cap (FDV) >$6B one day after launch?...
-        YES price: 0.06, NO price: 0.95
-      636111: MegaETH market cap (FDV) >$4B one day after launch?...
-        YES price: 0.24, NO price: 0.79
-
-Event Pair 47:
-  Event Similarity: 0.9213
-  Kalshi Event: KXDOGE-25DEC1017
-    Title: Dogecoin price range on Dec 10, 2025 at 5pm EST?
-    Markets: 0
-  Polymarket Event: 95978
-    Title: What price will Dogecoin hit in December?
-    Markets: 5
-    Market prices:
-      800762: Will Dogecoin reach $0.20 in December?...
-        YES price: 0.23, NO price: 0.84
-      800764: Will Dogecoin dip to $0.13 in December?...
-        YES price: 0.63, NO price: 0.45999999999999996
-      800766: Will Dogecoin dip to $0.03 in December?...
-        YES price: 0.008, NO price: 0.994
-
-Event Pair 48:
-  Event Similarity: 0.9210
-  Kalshi Event: KXNFLAFCSOUTH-25
-    Title: AFC South Division Winner?
-    Markets: 3
-    Market prices:
-      KXNFLAFCSOUTH-25-JAC: Pro Football AFC South Division Winner?...
-        YES ask: 61, NO ask: 41
-      KXNFLAFCSOUTH-25-IND: Pro Football AFC South Division Winner?...
-        YES ask: 4, NO ask: 97
-      KXNFLAFCSOUTH-25-HOU: Pro Football AFC South Division Winner?...
-        YES ask: 37, NO ask: 64
-  Polymarket Event: 23660
-    Title: AFC South Winner 
-    Markets: 3
-    Market prices:
-      540274: Will the Houston Texans win the AFC South?...
-        YES price: 0.373, NO price: 0.642
-      540275: Will the Indianapolis Colts win the AFC South?...
-        YES price: 0.039, NO price: 0.967
-      540276: Will the Jacksonville Jaguars win the AFC South?...
-        YES price: 0.61, NO price: 0.42000000000000004
-
-Event Pair 49:
-  Event Similarity: 0.9209
-  Kalshi Event: KXPRESPARTY-2028
-    Title: Which party will win the 2028 Presidential Election?
-    Markets: 2
-    Market prices:
-      KXPRESPARTY-2028-R: Will Republican win the Presidency in 2028?...
-        YES ask: 46, NO ask: 55
-      KXPRESPARTY-2028-D: Will Democratic win the Presidency in 2028?...
-        YES ask: 55, NO ask: 46
-  Polymarket Event: 33228
-    Title: Which party wins 2028 US Presidential Election?
-    Markets: 2
-    Market prices:
-      565064: Will the Republicans win the 2028 US Presidential Election?...
-        YES price: 0.46, NO price: 0.55
-      565065: Will the Democrats win the 2028 US Presidential Election?...
-        YES price: 0.55, NO price: 0.45999999999999996
-
-Event Pair 50:
-  Event Similarity: 0.9207
-  Kalshi Event: KXNFLAFCEAST-25
-    Title: AFC East Division Winner?
-    Markets: 2
-    Market prices:
-      KXNFLAFCEAST-25-NE: Pro Football AFC East Division Winner?...
-        YES ask: 82, NO ask: 19
-      KXNFLAFCEAST-25-BUF: Pro Football AFC East Division Winner?...
-        YES ask: 19, NO ask: 82
-  Polymarket Event: 23663
-    Title: AFC East Winner 
-    Markets: 2
-    Market prices:
-      540282: Will the Buffalo Bills win the AFC East?...
-        YES price: 0.169, NO price: 0.861
-      540285: Will the New England Patriots win the AFC East?...
-        YES price: 0.838, NO price: 0.19999999999999996
-

@@ -16,8 +16,9 @@ PulseTrade is a multi-agent AI system that helps users discover, research, and t
 3. [Kalshi Package Modifications](#kalshi-package-modifications)
 4. [API Keys Setup](#api-keys-setup)
 5. [Running the Chatbot](#running-the-chatbot)
-6. [Usage Examples](#usage-examples)
-7. [Troubleshooting](#troubleshooting)
+6. [Running the Arbitrage Finder](#running-the-arbitrage-finder)
+7. [Usage Examples](#usage-examples)
+8. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -324,6 +325,72 @@ If `adk web` doesn't work:
    ```bash
    python -c "import os; from dotenv import load_dotenv; load_dotenv(); print('KALSHI_API_KEY_ID:', os.getenv('KALSHI_API_KEY_ID') is not None)"
    ```
+
+---
+
+## Running the Arbitrage Finder
+
+The repo also includes a cross-platform arbitrage pipeline between **Kalshi** and **Polymarket** under the `arbitrage_finding/` package.
+
+### 1. Run the end-to-end arbitrage pipeline
+
+From the project root (`PulseTrader/`), run:
+
+```bash
+python -m arbitrage_finding.main
+```
+
+This script (`arbitrage_finding/main.py`) performs three main steps:
+
+1. **Index setup and event similarity search**
+   - Ensures Kalshi and Polymarket event/embedding indices exist on disk.
+   - Finds similar cross-platform event pairs using embeddings.
+   - Writes a capped list of candidate event pairs to:
+     - `data/cross_platform_event_candidates.csv`
+2. **Prompt generation for LLM evaluation**
+   - Builds structured prompts describing each candidate pair (events + markets, no prices).
+   - Saves them to:
+     - `data/cross_platform_event_prompts.csv`
+3. **LLM-based arbitrage compatibility checks**
+   - Uses Gemini via `google-genai` to decide whether each pair **could** support arbitrage (structurally/semantically).
+   - Writes results to:
+     - `data/cross_platform_event_results.csv`
+
+You can tweak how many pairs are processed and other settings by editing the constants at the top of `arbitrage_finding/main.py` (e.g. `TOP_K_EVENTS`, `PROMPT_MAX_PAIRS`, `LLM_MODEL`).
+
+#### Using the precomputed example data
+
+For reproducibility (e.g., matching the report / presentation results), you can also download a snapshot of the `data/` folder that was used to generate those results from Google Drive:
+
+- **Google Drive link (precomputed `data/` folder)**: `<ADD_GOOGLE_DRIVE_LINK_HERE>`
+
+After downloading, place the contents under the project’s `data/` directory (creating it if needed), so paths like `data/cross_platform_event_candidates.csv` and `data/cross_platform_event_results.csv` line up with the scripts above.
+
+### 2. Check for live arbitrage with current prices
+
+Once the pipeline above has produced `data/cross_platform_event_results.csv`, you can check for **actual** arbitrage opportunities at current market prices by running:
+
+```bash
+python arbitrage_finding/check_arbitrage_opportunities.py
+```
+
+This script:
+
+- Loads only the event pairs where the LLM judged `could_have_arbitrage == true`.
+- Fetches **fresh** markets/prices from Kalshi and Polymarket for the matched market pairs.
+- Computes net cost and profit for two strategies (buy YES on one exchange / NO on the other), including Kalshi fees.
+- Prints a detailed summary to the console.
+- Saves all detected opportunities to:
+  - `data/arbitrage_opportunities.csv`
+
+This gives you a current snapshot of executable cross-exchange arbitrage (subject to liquidity and slippage) based on the latest prices.
+
+### 3. Notebooks for exploring results
+
+There are two helper notebooks in `arbitrage_finding/`:
+
+- `arbitrage_opportunities_display.ipynb`: loads `data/arbitrage_opportunities.csv` (produced by `check_arbitrage_opportunities.py`) and provides a richer, notebook-based view of the concrete arbitrage opportunities.
+- `check_arbitrage_opportunities.ipynb`: explores and inspects the LLM evaluation outputs from step 3 of the pipeline (`data/cross_platform_event_results.csv`), including the `could_have_arbitrage` flags and matched market pair JSON.
 
 ---
 
