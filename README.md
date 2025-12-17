@@ -362,7 +362,7 @@ You can tweak how many pairs are processed and other settings by editing the con
 
 For reproducibility (e.g., matching the report / presentation results), you can also download a snapshot of the `data/` folder that was used to generate those results from Google Drive:
 
-- **Google Drive link (precomputed `data/` folder)**: `<ADD_GOOGLE_DRIVE_LINK_HERE>`
+- **Google Drive link (precomputed `data/` folder)**: `https://drive.google.com/drive/folders/1ZWI9WP9YYuyIvyDnjH4JSWgPsPXcmLXV?usp=drive_link`
 
 After downloading, place the contents under the project’s `data/` directory (creating it if needed), so paths like `data/cross_platform_event_candidates.csv` and `data/cross_platform_event_results.csv` line up with the scripts above.
 
